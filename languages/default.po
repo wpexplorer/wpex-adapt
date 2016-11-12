@@ -1,0 +1,1404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adapt WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-19 13:13-0800\n"
+"PO-Revision-Date: 2016-02-19 13:13-0800\n"
+"Last-Translator: AJ Clarke <wpexplorer@gmail.com>\n"
+"Language-Team: WPExplorer.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;"
+"_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;_nx_noop:4c,1,2;"
+"_nx;_esc_attr__;esc_attr_x;esc_attr_e;esc_html__;esc_html_e;esc_html_x;__;"
+"_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid "404 Error"
+msgstr ""
+
+#: ../404.php:18
+msgid "Sorry, the page you were looking for could not be found."
+msgstr ""
+
+#: ../comments.php:30
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:32
+#, php-format
+msgid "%s Comments"
+msgstr ""
+
+#: ../comments.php:48
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:49
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:50
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:55
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:46
+msgid "Scroll Up"
+msgstr ""
+
+#: ../search.php:14
+msgid "Search Results For"
+msgstr ""
+
+#: ../search.php:29
+msgid "No results found for that query."
+msgstr ""
+
+#: ../single-portfolio.php:21 ../single.php:21
+msgid "Newer"
+msgstr ""
+
+#: ../single-portfolio.php:22 ../single.php:28
+msgid "Older"
+msgstr ""
+
+#: ../single.php:15 ../admin/functions/functions.options.php:26
+#: ../admin/functions/functions.options.php:202
+#: ../admin/functions/functions.options.php:372
+msgid "Blog"
+msgstr ""
+
+#: ../single.php:38 ../partials/entry.php:28
+msgid "On"
+msgstr ""
+
+#: ../single.php:39 ../partials/entry.php:29
+msgid "By"
+msgstr ""
+
+#: ../single.php:41 ../partials/entry.php:31
+msgid "With"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:556
+msgid "Last Backup : "
+msgstr ""
+
+#: ../admin/front-end/options.php:43 ../admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:21
+msgid "Site Description"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:22
+#: ../admin/functions/functions.options.php:246
+msgid "Slider"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:23
+msgid "Page Content"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:24
+#: ../admin/functions/functions.options.php:126
+#: ../functions/post-types-taxonomies/register-highlights.php:32
+msgid "Highlights"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:25
+#: ../admin/functions/functions.options.php:155
+#: ../admin/functions/functions.options.php:324
+#: ../functions/post-types-taxonomies/register-portfolio.php:41
+msgid "Portfolio"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:47
+msgid "Custom Logo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:48
+msgid "Use this field to upload your custom logo for use in the theme header"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:55
+msgid "Retina Logo (optional)"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:56
+msgid ""
+"Upload your custom retina ready logo. This should be 2x the size of your "
+"standard logo."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:63
+msgid "Standard Logo Height"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:64
+msgid ""
+"Enter your standard logo height in pixels. Used for retina purposes. Should "
+"be 1/2 the height of your retina logo dimensions and do not include the px. "
+"Example: 150"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:71
+msgid "Standard Logo Width"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:72
+msgid ""
+"Enter your standard logo width in pixels. Used for retina purposes. Should "
+"be 1/2 the width of your retina logo dimensions and do not include the px. "
+"Example: 80"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:79
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:80
+msgid ""
+"Upload a 16px x 16px Png/Gif image that will represent your website's "
+"favicon."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:88
+msgid "Responsiveness"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:89
+msgid "Do you wish to enable or disable the responsive CSS for this theme?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:92
+#: ../admin/functions/functions.options.php:102
+#: ../admin/functions/functions.options.php:136
+#: ../admin/functions/functions.options.php:165
+#: ../admin/functions/functions.options.php:212
+#: ../admin/functions/functions.options.php:287
+#: ../admin/functions/functions.options.php:297
+#: ../admin/functions/functions.options.php:389
+#: ../admin/functions/functions.options.php:399
+#: ../admin/functions/functions.options.php:409
+#: ../admin/functions/functions.options.php:425
+#: ../admin/functions/functions.options.php:449
+#: ../admin/functions/functions.options.php:459
+#: ../admin/functions/functions.options.php:469
+msgid "Enable"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:93
+#: ../admin/functions/functions.options.php:103
+#: ../admin/functions/functions.options.php:137
+#: ../admin/functions/functions.options.php:166
+#: ../admin/functions/functions.options.php:213
+#: ../admin/functions/functions.options.php:288
+#: ../admin/functions/functions.options.php:298
+#: ../admin/functions/functions.options.php:390
+#: ../admin/functions/functions.options.php:400
+#: ../admin/functions/functions.options.php:410
+#: ../admin/functions/functions.options.php:426
+#: ../admin/functions/functions.options.php:450
+#: ../admin/functions/functions.options.php:460
+#: ../admin/functions/functions.options.php:470
+msgid "Disable"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:98
+msgid "Retina Support"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:99
+msgid ""
+"Do you wish to enable or disable the built-in retina support? If using a "
+"caching system such as W3Total Cache or hosted on WPEngine, it is best to "
+"disable. When enabled this will create a second version of every cropped "
+"image that is 2x as large and save it on your server."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:109
+msgid "Home"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:114
+msgid "Homepage Layout Manager"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:115
+msgid "Organize how you want the layout to appear on the homepage."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:132
+msgid "Highlights Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:133
+msgid "Do you wish to enable or disable the highlights section heading?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:142
+msgid "Highlights Custom Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:143
+msgid ""
+"Custom heading text for the homepage highlights section.<br /><br /"
+"><strong>Note:</strong> Leave blank to show the translatable/localized "
+"default string."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:161
+msgid "Portfolio Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:162
+msgid "Do you wish to enable or disable the portfolio section heading?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:171
+msgid "Portfolio Custom Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:172
+msgid ""
+"Custom heading text for the homepage portfolio section.<br /><br /"
+"><strong>Note:</strong> Leave blank to show the translatable/localized "
+"default string."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:180
+msgid "Portfolio Count"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:181
+msgid "How many portfolio posts do you wish to show for the portfolio section?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:188
+#: ../functions/post-types-taxonomies/register-portfolio.php:75
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:189
+#: ../admin/functions/functions.options.php:237
+msgid "Select a category for your homepage recent blog items."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:208
+msgid "Blog Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:209
+msgid "Do you wish to enable or disable the blog section heading?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:218
+msgid "Blog Intro Custom Heading"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:219
+msgid ""
+"Custom heading text for the homepage blog section.<br /><br /><strong>Note:</"
+"strong> Leave blank to show the translatable/localized default string."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:228
+msgid "Blog Count"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:229
+msgid "How many blog posts do you wish to show for the blog section?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:236
+msgid "Blog Category"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:251
+msgid "Slider Height"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:252
+msgid ""
+"Select a custom height for the slider in px. If left blank the theme will "
+"not crop any images vertically so you can have different height slides."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:259
+msgid "Animation"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:260
+msgid "Select your desired slider animation."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:271
+msgid "Animation Direction"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:272
+msgid ""
+"Select your desired direction for the slider animation.<br /><br /"
+"><strong>Note:</strong> If you choose vertical slides, all slides must be "
+"the same height to prevent issues."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:283
+msgid "Auto Slideshow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:284
+msgid "Do you wish to enable or disable the automatic slideshow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:293
+msgid "Randomize Slideshow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:294
+msgid "Do you wish to enable or disable random slide order."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:303
+msgid "Slideshow Speed"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:304
+msgid ""
+"Adjust the slideshow speed of your homepage slider. Time in milliseconds"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:314
+msgid "Slider Alternate"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:315
+msgid ""
+"Use this field to insert a shortcode or other HTML to replace the default "
+"flexslider"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:329
+msgid "Custom Portfolio Labels"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:330
+msgid ""
+"Easily change the name of your post type here to say something else.<br /"
+"><br /><strong>IMPORTANT</strong>: Refresh your page to see the change live "
+"in your dashboard."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:337
+msgid "Custom Portfolio Slug"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:338
+msgid ""
+"Easily change the slug of your post type here to say something else. If you "
+"are using a page with the slug \"portfolio\" and want to use pagination do "
+"not set this value to \"portfolio\" or your pagination will break.<br /><br /"
+"><strong>IMPORTANT</strong>: You must re-save your permalinks after changing "
+"this setting."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:345
+msgid "Custom Portfolio Category Slug"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:346
+msgid ""
+"Easily change the slug of your category taxonomy here to say something else. "
+"<br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks "
+"after changing this setting."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:353
+msgid "Custom Portfolio Tag Slug"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:354
+msgid ""
+"Easily change the slug of your tag taxonomy here to say something else. <br /"
+"><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after "
+"changing this setting."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:361
+msgid "Posts Per Page"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:362
+msgid "How many posts per page to show for this post type archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:377
+msgid "Custom Blog Title"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:378
+msgid ""
+"Enter your custom blog title. Used for the main heading on single posts. To "
+"change your main blog page title edit the page title in your page editor."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:385
+msgid "Featured Images On Single Posts?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:386
+msgid "Display featured images on single blog posts?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:395
+msgid "Entry Excerpts"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:396
+msgid ""
+"Display excerpts on your standard post entries instead of the full posts?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:405
+msgid "Display Tags"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:406
+msgid "Display current post tags at the bottom of standard posts?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:416
+msgid "Footer"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:421
+msgid "Widgetized Footer"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:422
+msgid "Display widgetized Footer?"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:431
+msgid "Copyright Text"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:432
+msgid ""
+"You can use the following shortcodes in your footer text: [wp-link] [theme-"
+"link] [loginout-link] [blog-title] [blog-link] [the-year]"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:440
+msgid "Post Types"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:445
+msgid "Enable Slides Post Type"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:446
+msgid ""
+"Do you wish to enable or disable the built-in Slider post type? Refresh your "
+"page after saving to see your changes."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:455
+msgid "Enable Highlights Post Type"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:456
+msgid ""
+"Do you wish to enable or disable the built-in Highlights post type? Refresh "
+"your page after saving to see your changes."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:465
+msgid "Enable Portfolio Post Type"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:466
+msgid ""
+"Do you wish to enable or disable the built-in Portfolio post type? Refresh "
+"your page after saving to see your changes."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:477
+msgid "Tracking"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:482
+msgid "Tracking Code"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:483
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:491
+msgid "Backup"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:496
+msgid "Backup and Restore Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:500
+msgid ""
+"You can use the two buttons below to backup your current options, and then "
+"restore it back at a later time. This is useful if you want to experiment on "
+"the options but would like to keep the old settings in case you need it back."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:504
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:508
+msgid ""
+"You can tranfer the saved options data between different installs by copying "
+"the text inside the text box. To import data from another install, replace "
+"the data in the text box with the one from another install and click "
+"\"Import Options\"."
+msgstr ""
+
+#: ../functions/comments-callback.php:28
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions/comments-callback.php:28 ../functions/comments-callback.php:52
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:34
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:72
+msgid "Edit"
+msgstr ""
+
+#: ../functions/comments-callback.php:51
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions/comments-callback.php:57
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/comments-callback.php:65
+msgid "reply to comment"
+msgstr ""
+
+#: ../functions/dashboard-feed.php:9
+msgid "WPExplorer Blog"
+msgstr ""
+
+#: ../functions/dashboard-feed.php:10
+msgid "Web Design Blog"
+msgstr ""
+
+#: ../functions/excerpts.php:21
+msgid "continue reading"
+msgstr ""
+
+#: ../functions/helpers.php:28
+msgid "No terms"
+msgstr ""
+
+#: ../functions/scripts.php:28
+msgid "Menu"
+msgstr ""
+
+#: ../functions/theme-setup.php:23
+msgid "Main"
+msgstr ""
+
+#: ../functions/welcome.php:39 ../functions/welcome.php:40
+msgid "Adapt Theme"
+msgstr ""
+
+#: ../functions/welcome.php:78
+msgid "A free WordPress theme by WPExplorer.com"
+msgstr ""
+
+#: ../functions/welcome.php:82
+msgid "About"
+msgstr ""
+
+#: ../functions/welcome.php:86
+msgid "GPL License"
+msgstr ""
+
+#: ../functions/welcome.php:87
+msgid ""
+"This theme is licensed under the GPL license. This means you can use it for "
+"anything you like as long as it remains GPL."
+msgstr ""
+
+#: ../functions/welcome.php:91
+msgid "Credits"
+msgstr ""
+
+#: ../functions/welcome.php:93
+msgid "This theme was created by WPExplorer.com."
+msgstr ""
+
+#: ../functions/welcome.php:95
+msgid "We work hard to develop and update this theme."
+msgstr ""
+
+#: ../functions/welcome.php:97
+msgid ""
+"A back-link to our website is very much appreciated or you can follow us via "
+"our social media!"
+msgstr ""
+
+#: ../functions/welcome.php:107
+msgid "Liability"
+msgstr ""
+
+#: ../functions/welcome.php:109
+msgid ""
+"WPExplorer.com shall not be held liable for any damages, including, but not "
+"limited to, the loss of data or profit, arising from the use of, or "
+"inability to use, this theme."
+msgstr ""
+
+#: ../functions/welcome.php:115
+msgid "Getting Started"
+msgstr ""
+
+#: ../functions/welcome.php:121
+msgid ""
+"Below you will find some useful links to get you started with this theme."
+msgstr ""
+
+#: ../functions/welcome.php:123
+msgid "Main Theme Options"
+msgstr ""
+
+#: ../functions/welcome.php:132
+msgid "Styling Options"
+msgstr ""
+
+#: ../functions/welcome.php:133
+msgid "Theme Page"
+msgstr ""
+
+#: ../functions/welcome.php:138
+msgid "Recommendations"
+msgstr ""
+
+#: ../functions/welcome.php:143
+msgid "Plugins"
+msgstr ""
+
+#: ../functions/welcome.php:144
+msgid ""
+"Below you will find links to plugins we (WPExplorer.com staff) personally "
+"like and recommend. None of these plugins are required for your theme to "
+"work, they simply add additional functionality."
+msgstr ""
+
+#: ../functions/welcome.php:160
+msgid "Total Drag & Drop Theme"
+msgstr ""
+
+#: ../functions/welcome.php:161
+msgid ""
+"Check out our most advanced (yet easy to use) and flexible theme to date."
+msgstr ""
+
+#: ../functions/welcome.php:169
+msgid "WordPress Hosting"
+msgstr ""
+
+#: ../functions/welcome.php:170
+msgid ""
+"If you need fast and reliable hosting we recommend the same host we use and "
+"love WPEngine."
+msgstr ""
+
+#: ../functions/welcome.php:178
+msgid "Deals & Coupons"
+msgstr ""
+
+#: ../functions/welcome.php:179
+msgid "Check out our coupons page for great deals on WordPress resources."
+msgstr ""
+
+#: ../functions/widget-areas.php:13
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions/widget-areas.php:15
+msgid "Widgets in this area are used in the default sidebar."
+msgstr ""
+
+#: ../functions/widget-areas.php:26
+msgid "Footer 1"
+msgstr ""
+
+#: ../functions/widget-areas.php:28
+msgid "Widgets in this area are used in the first footer column"
+msgstr ""
+
+#: ../functions/widget-areas.php:36
+msgid "Footer 2"
+msgstr ""
+
+#: ../functions/widget-areas.php:38
+msgid "Widgets in this area are used in the second footer column"
+msgstr ""
+
+#: ../functions/widget-areas.php:46
+msgid "Footer 3"
+msgstr ""
+
+#: ../functions/widget-areas.php:48
+msgid "Widgets in this area are used in the third footer column"
+msgstr ""
+
+#: ../functions/widget-areas.php:56
+msgid "Footer 4"
+msgstr ""
+
+#: ../functions/widget-areas.php:58
+msgid "Widgets in this area are used in the fourth footer column"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:14
+msgid "Image Sizes"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:16
+msgid ""
+"This theme uses a built-in image resizing function based on the WordPress "
+"wp_get_image_editor() function so you can quickly alter the image sizes on "
+"your site without having to regenerate the thumbnails. If you are more "
+"concerend with site speed then you will probably want to set your entry "
+"image sizes to a different crop then your posts and if your main priority is "
+"storage space you will probably want to set entry sizes the same as post "
+"sizes."
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:26
+msgid "Blog Entry Image Width"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:39
+msgid "Blog Entry Image Height"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:52
+msgid "Blog Post Image Width"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:65
+msgid "Blog Post Image Height"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:78
+msgid "Portfolio Entry Image Width"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:91
+msgid "Portfolio Entry Image Height"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:104
+msgid "Portfolio Post Image Width"
+msgstr ""
+
+#: ../functions/customizer/image-sizes.php:117
+msgid "Portfolio Post Image Height"
+msgstr ""
+
+#: ../functions/customizer/styling.php:25
+msgid "Styling"
+msgstr ""
+
+#: ../functions/customizer/styling.php:105
+msgid "Header Top Padding"
+msgstr ""
+
+#: ../functions/customizer/styling.php:114
+msgid "Header Bottom Padding"
+msgstr ""
+
+#: ../functions/customizer/styling.php:123
+msgid "Logo Text Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:130
+msgid "Header Top Border Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:137
+msgid "Header Bottom Border Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:144
+msgid "Menu Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:151
+msgid "Menu Link Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:158
+msgid "Active Menu Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:165
+msgid "Sub-Menu Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:172
+msgid "Sub-Menu Border"
+msgstr ""
+
+#: ../functions/customizer/styling.php:179
+msgid "Sub-Menu Link Bottom Border"
+msgstr ""
+
+#: ../functions/customizer/styling.php:186
+msgid "Sub-Menu Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:193
+msgid "Sub-Menu Link Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:200
+msgid "Sub-Menu Link Hover Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:207
+msgid "Mobile Menu Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:215
+msgid "Mobile Menu Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:222
+msgid "Mobile Menu Link Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:229
+msgid "Mobile Menu Borders"
+msgstr ""
+
+#: ../functions/customizer/styling.php:236
+msgid "Footer Widgets Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:243
+msgid "Footer Widgets Text"
+msgstr ""
+
+#: ../functions/customizer/styling.php:250
+msgid "Footer Widgets Heading"
+msgstr ""
+
+#: ../functions/customizer/styling.php:257
+msgid "Footer Widgets Links"
+msgstr ""
+
+#: ../functions/customizer/styling.php:264
+msgid "Footer Widgets Links Hover"
+msgstr ""
+
+#: ../functions/customizer/styling.php:271
+msgid "Footer Widgets Borders"
+msgstr ""
+
+#: ../functions/customizer/styling.php:278
+msgid "Entry Title Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:285
+msgid "Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:292
+msgid "Post Link Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:299
+msgid "Sidebar Link Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:306
+msgid "Sidebar Link Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:313
+msgid "Theme Button Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:320
+msgid "Theme Button Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:327
+msgid "Theme Button Hover Color"
+msgstr ""
+
+#: ../functions/customizer/styling.php:334
+msgid "Theme Button Hover Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:341
+msgid "Slider Arrow Hover Background"
+msgstr ""
+
+#: ../functions/customizer/styling.php:348
+msgid "Slider Arrow Hover Color"
+msgstr ""
+
+#: ../functions/gallery-metabox/gallery-metabox.php:56
+msgid "Image Gallery"
+msgstr ""
+
+#: ../functions/gallery-metabox/gallery-metabox.php:82
+#: ../functions/gallery-metabox/gallery-metabox.php:139
+msgid "Remove image"
+msgstr ""
+
+#: ../functions/gallery-metabox/gallery-metabox.php:92
+msgid "Add/Edit Images"
+msgstr ""
+
+#: ../functions/gallery-metabox/gallery-metabox.php:120
+msgid "Add Images to Gallery"
+msgstr ""
+
+#: ../functions/gallery-metabox/gallery-metabox.php:122
+msgid "Add to gallery"
+msgstr ""
+
+#: ../functions/meta/init.php:633
+msgid "Please Try Again"
+msgstr ""
+
+#: ../functions/meta/init.php:650
+msgid "Remove Embed"
+msgstr ""
+
+#: ../functions/meta/init.php:656
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: ../functions/meta/usage.php:24
+msgid "Slide Options"
+msgstr ""
+
+#: ../functions/meta/usage.php:31
+msgid "Video URL"
+msgstr ""
+
+#: ../functions/meta/usage.php:32
+msgid ""
+"Enter in a video URL that is compatible with WordPress's built-in oEmbed "
+"feature."
+msgstr ""
+
+#: ../functions/meta/usage.php:32
+msgid "Learn More"
+msgstr ""
+
+#: ../functions/meta/usage.php:38
+msgid "Link URL"
+msgstr ""
+
+#: ../functions/meta/usage.php:39
+msgid "Enter a URL to link this slide to. Example: http://authenticthemes.com"
+msgstr ""
+
+#: ../functions/meta/usage.php:45
+msgid "Link Target"
+msgstr ""
+
+#: ../functions/meta/usage.php:46
+msgid "Select a target for the URL."
+msgstr ""
+
+#: ../functions/meta/usage.php:61
+msgid "Highlight Options"
+msgstr ""
+
+#: ../functions/meta/usage.php:68
+msgid "URL"
+msgstr ""
+
+#: ../functions/meta/usage.php:73
+msgid "Enter a custom url for this higlight."
+msgstr ""
+
+#: ../functions/meta/usage.php:82
+msgid "Project Options"
+msgstr ""
+
+#: ../functions/meta/usage.php:89
+msgid "Post Media Alternative"
+msgstr ""
+
+#: ../functions/meta/usage.php:91
+msgid ""
+"Enter content here to override the default featured image/slider area. You "
+"can use this for videos, multiple images...etc."
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:26
+#: ../functions/post-types-taxonomies/post-type-labels.php:28
+#: ../functions/post-types-taxonomies/post-type-labels.php:29
+#: ../functions/post-types-taxonomies/post-type-labels.php:30
+msgid "Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:27
+#: ../functions/post-types-taxonomies/register-highlights.php:34
+#: ../functions/post-types-taxonomies/register-portfolio.php:43
+#: ../functions/post-types-taxonomies/register-slides.php:34
+msgid "Add New Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:28
+#: ../functions/post-types-taxonomies/post-type-labels.php:30
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:36
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:74
+msgid "Add New"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:29
+msgid "Edit New"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:31
+#: ../functions/post-types-taxonomies/register-highlights.php:38
+#: ../functions/post-types-taxonomies/register-portfolio.php:47
+#: ../functions/post-types-taxonomies/register-slides.php:38
+msgid "View Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:32
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:29
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:67
+msgid "Search"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:33
+#: ../functions/post-types-taxonomies/post-type-labels.php:34
+msgid "No"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:33
+msgid "items found"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/post-type-labels.php:34
+msgid "items found in the trash"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:33
+msgid "Highlights Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:35
+#: ../functions/post-types-taxonomies/register-highlights.php:37
+msgid "Add New Highlights Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:36
+msgid "Edit Highlights Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:39
+msgid "Search Highlights"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:40
+msgid "No highlights items found"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:41
+msgid "No highlights items found in trash"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:57
+#: ../functions/post-types-taxonomies/register-slides.php:56
+msgid "Title"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:58
+#: ../functions/post-types-taxonomies/register-portfolio.php:114
+#: ../functions/post-types-taxonomies/register-slides.php:57
+msgid "Thumbnail"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:59
+msgid "Author"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:60
+#: ../partials/entry.php:32 ../partials/entry.php:34
+msgid "Comments"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:61
+msgid "Date"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-highlights.php:85
+#: ../functions/post-types-taxonomies/register-portfolio.php:138
+#: ../functions/post-types-taxonomies/register-portfolio.php:148
+#: ../functions/post-types-taxonomies/register-slides.php:79
+msgid "None"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:42
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:44
+#: ../functions/post-types-taxonomies/register-portfolio.php:46
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:45
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:48
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:49
+msgid "No portfolio items found"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:50
+msgid "No portfolio items found in trash"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:74
+#: ../functions/post-types-taxonomies/register-portfolio.php:88
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:76
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:77
+msgid "Popular Portfolio Categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:78
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:79
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:80
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:81
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:82
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:83
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:84
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:85
+msgid "Separate portfolio categories with commas"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:86
+msgid "Add or remove portfolio categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:87
+msgid "Choose from the most used portfolio categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-portfolio.php:115
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:28
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:29
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:32
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:33
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:34
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:35
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:36
+msgid "Category"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:31
+msgid "Slides"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:32
+msgid "Home Slides"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:33
+msgid "Slides Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:35
+#: ../functions/post-types-taxonomies/register-slides.php:37
+msgid "Add New Slides Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:36
+msgid "Edit Slides Item"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:39
+msgid "Search Slides"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:40
+msgid "No slides items found"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/register-slides.php:41
+msgid "No slides items found in trash"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:27
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:30
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:31
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:41
+msgid "Categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:30
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:68
+msgid "Popular"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:31
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:69
+#: ../templates/portfolio-filterable.php:24
+msgid "All"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:32
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:33
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:70
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:71
+msgid "Parent"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:35
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:73
+msgid "Update"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:37
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:75
+msgid "New"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:37
+msgid "Category name"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:38
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:76
+msgid "Seperate"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:38
+msgid "categories with commas"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:39
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:77
+msgid "Add or remove"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:39
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:40
+msgid "categories"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:40
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:78
+msgid "Choose from the most used"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:65
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:68
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:69
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:79
+msgid "Tags"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:66
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:67
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:70
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:71
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:72
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:73
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:74
+msgid "Tag"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:75
+msgid "Tag name"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:76
+msgid "tags with commas"
+msgstr ""
+
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:77
+#: ../functions/post-types-taxonomies/taxonomies-labels.php:78
+msgid "tags"
+msgstr ""
+
+#: ../partials/entry.php:33
+msgid "Comment"
+msgstr ""
+
+#: ../partials/home-blog.php:40
+msgid "Recent News"
+msgstr ""
+
+#: ../partials/home-highlights.php:30
+msgid "Features"
+msgstr ""
+
+#: ../partials/home-portfolio.php:39
+msgid "Recent Work"
+msgstr ""

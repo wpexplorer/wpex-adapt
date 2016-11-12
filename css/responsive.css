@@ -1,0 +1,51 @@
+/*-----------------------------------------------------------------------------------*
+/* = General
+/*-----------------------------------------------------------------------------------*/
+img{ max-width: 100%; }
+#masternav select { display: none; width: 100% !important; }
+#masternav .selector { display: none; margin-top: 5px; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Tablet and under
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 959px) {
+	#logo { text-align: center; float: none; max-width: 100%; }
+	#logo a, #logo img { float: none; }
+	#masterhead { padding: 0 0 40px; }
+	#masternav { position: static; top: auto; right: auto; margin: 0 0 40px; height: auto; }
+	.masternav-menu { display: none; }
+	.slicknav_menu { display: block; }
+	.flexslider .caption{ display: none; }
+	.footer-widget-col { width: 100%; }
+	#home-tagline{ font-size: 16px; }
+	ul.filter{ position: inherit; height: auto; margin-top: 20px; margin-bottom: 0px; top: 0; left: 0; right: auto; }
+	ul.filter li{ height: auto; margin-top: 10px; display: block; float: none; margin-right: 0; margin-left: 0; }
+	ul.filter li a { padding: 5px; }
+	#single-nav a{ font-size: 10px; }
+	#single-nav-left, #single-nav-right { margin-left: 5px; }
+	.content-area, #sidebar{ width: 100%; }
+	.loop-entry-meta{ display: none; }
+	.loop-entry h2{ margin-bottom: 10px; }
+	#sidebar{ margin-top: 25px; padding-top: 25px; border-top: 5px solid #444; }
+	#single-portfolio-left, #single-portfolio-right{float: none;width: 100%; }
+	#single-portfolio-left { margin-bottom: 20px; }
+	#page-heading{ text-align: center; }
+	#single-nav{ position: inherit; margin-top: 20px; margin-left: -10px; text-align: center; }
+	#single-nav-left, #single-nav-right { display: inline-block; float: none; }
+	.children li{ margin: 0 !important; }
+	#copyright,#back-to-top{ float: none; width: 100%; text-align: center; }
+
+	.wpex-col-4 { width: 50%; }
+	.wpex-col-4.wpex-count-3 { clear: both; }
+	#footer-widget-wrap .wpex-col-4 { width: 100%; }
+
+}
+
+@media only screen and (max-width: 790px) {
+	.hp-highlight.wpex-col-4 { width: 100%; }
+	.flex-direction-nav li a.flex-next, .flex-direction-nav li a.flex-prev { height: 40px; line-height: 40px; width: 30px; font-size: 16px; margin-top: -20px; }
+}
+
+@media only screen and (max-width: 480px) {
+	.wpex-col, .wpex-col-4 { width: 100%; }
+}
