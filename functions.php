@@ -28,10 +28,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Theme info
 function wpex_get_theme_info() {
 	return array(
-		'name'      => 'Adapt',
-		'dir'       => get_template_directory_uri() .'/functions/',
-		'url'       => 'http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme/',
-		'changelog' => 'http://www.wpexplorer.com/changelogs/adapt/',
+		'name'        => 'Adapt',
+		'dir'         => get_template_directory_uri() .'/functions/',
+		'url'         => 'http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme/',
+		'changelog'   => 'https://wpexplorer-updates.com/changelog/adapt-wordpress-theme/',
+		'github_repo' => 'https://github.com/wpexplorer/wpex-adapt',
 	);
 }
 

@@ -34,7 +34,7 @@ function wpex_load_scripts() {
 	$deps = array( 'jquery', 'slicknav', 'hoverIntent', 'superfish', 'fitvids', 'prettyPhoto' );
 	wp_enqueue_script( 'wpex-global', WPEX_JS_DIR . '/global.js', $deps, '3.0.0', true );
 	wp_localize_script( 'wpex-global', 'wpexLocalize', array(
-		'mobileMenuText' => wpex_get_data( 'responsive_menu_text', __( 'Menu', 'adapt' )
+		'mobileMenuText' => wpex_get_data( 'responsive_menu_text', __( 'Menu', 'wpex-adapt' )
 	) ) );
 
 	wp_register_script( 'flexslider', WPEX_JS_DIR. '/jquery.flexslider.js', array( 'jquery' ), '2.2.2', true );

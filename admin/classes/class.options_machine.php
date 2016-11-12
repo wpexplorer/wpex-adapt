@@ -553,7 +553,7 @@ class Options_Machine {
 					
 					$output .= '<div class="backup-box">';
 					$output .= '<div class="instructions">'.$instructions."\n";
-					$output .= '<p><strong>'. __( 'Last Backup : ', 'adapt' ).'<span class="backup-log">'.$log.'</span></strong></p></div>'."\n";
+					$output .= '<p><strong>'. __( 'Last Backup : ', 'wpex-adapt' ).'<span class="backup-log">'.$log.'</span></strong></p></div>'."\n";
 					$output .= '<a href="#" id="of_backup_button" class="button" title="Backup Options">Backup Options</a>';
 					$output .= '<a href="#" id="of_restore_button" class="button" title="Restore Options">Restore Options</a>';
 					$output .= '</div>';

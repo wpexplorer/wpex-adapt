@@ -23,7 +23,7 @@ if ( ! function_exists( 'wpex_excerpt' ) ) {
 		} else {
 			$output = wp_trim_words( strip_shortcodes( get_the_content( $id ) ), $length);
 			if ( $readmore == true ) {
-				$readmore_link = '<a href="'. get_permalink( $id ) .'" title="'. __('continue reading', 'adapt' ) .'" rel="bookmark" class="readmore-link">'. __('continue reading', 'adapt' ) .' &rarr;</a>';
+				$readmore_link = '<a href="'. get_permalink( $id ) .'" title="'. __('continue reading', 'wpex-adapt' ) .'" rel="bookmark" class="readmore-link">'. __('continue reading', 'wpex-adapt' ) .' &rarr;</a>';
 				$output .= apply_filters( 'wpex_readmore_link', $readmore_link );
 			}
 		}

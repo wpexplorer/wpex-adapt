@@ -29,16 +29,16 @@ if ( ! class_exists( 'Symple_Highlights_Post_Type' ) ) :
 		public function highlights_init() {
 			$args = apply_filters( 'symple_highlights_args', array(
 					'labels'			=> array(
-					'name'					=> __( 'Highlights', 'adapt' ),
-					'singular_name'			=> __( 'Highlights Item', 'adapt' ),
-					'add_new'				=> __( 'Add New Item', 'adapt' ),
-					'add_new_item'			=> __( 'Add New Highlights Item', 'adapt' ),
-					'edit_item'				=> __( 'Edit Highlights Item', 'adapt' ),
-					'new_item'				=> __( 'Add New Highlights Item', 'adapt' ),
-					'view_item'				=> __( 'View Item', 'adapt' ),
-					'search_items'			=> __( 'Search Highlights', 'adapt' ),
-					'not_found'				=> __( 'No highlights items found', 'adapt' ),
-					'not_found_in_trash'	=> __( 'No highlights items found in trash', 'adapt' )
+					'name'					=> __( 'Highlights', 'wpex-adapt' ),
+					'singular_name'			=> __( 'Highlights Item', 'wpex-adapt' ),
+					'add_new'				=> __( 'Add New Item', 'wpex-adapt' ),
+					'add_new_item'			=> __( 'Add New Highlights Item', 'wpex-adapt' ),
+					'edit_item'				=> __( 'Edit Highlights Item', 'wpex-adapt' ),
+					'new_item'				=> __( 'Add New Highlights Item', 'wpex-adapt' ),
+					'view_item'				=> __( 'View Item', 'wpex-adapt' ),
+					'search_items'			=> __( 'Search Highlights', 'wpex-adapt' ),
+					'not_found'				=> __( 'No highlights items found', 'wpex-adapt' ),
+					'not_found_in_trash'	=> __( 'No highlights items found in trash', 'wpex-adapt' )
 				),
 				'public'			=> true,
 				'supports'			=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'custom-fields', 'revisions' ),
@@ -54,11 +54,11 @@ if ( ! class_exists( 'Symple_Highlights_Post_Type' ) ) :
 		public function hp_highlights_edit_columns( $highlights_columns ) {
 			$highlights_columns = array(
 				"cb"					=> "<input type=\"checkbox\" />",
-				"title"					=> __( 'Title', 'adapt' ),
-				"highlights_thumbnail"	=> __( 'Thumbnail', 'adapt' ),
-				"author" 				=> __( 'Author', 'adapt' ),
-				"comments" 				=> __( 'Comments', 'adapt' ),
-				"date" 					=> __( 'Date', 'adapt' ),
+				"title"					=> __( 'Title', 'wpex-adapt' ),
+				"highlights_thumbnail"	=> __( 'Thumbnail', 'wpex-adapt' ),
+				"author" 				=> __( 'Author', 'wpex-adapt' ),
+				"comments" 				=> __( 'Comments', 'wpex-adapt' ),
+				"date" 					=> __( 'Date', 'wpex-adapt' ),
 			);
 			$highlights_columns['comments'] = '<div class="vers"><img alt="Comments" src="' . esc_url( admin_url( 'images/comment-grey-bubble.png' ) ) . '" /></div>';
 			return $highlights_columns;
@@ -82,7 +82,7 @@ if ( ! class_exists( 'Symple_Highlights_Post_Type' ) ) :
 					if ( isset( $thumb ) ) {
 						echo $thumb;
 					} else {
-						echo __( 'None', 'adapt' );
+						echo __( 'None', 'wpex-adapt' );
 					}
 					break;
 		

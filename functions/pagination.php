@@ -28,7 +28,7 @@ if ( ! function_exists( 'wpex_pagination') ) {
 				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 				'format' => $format,
 				'current' => max( 1, get_query_var( 'paged') ),
-				'adapt' => $total,
+				'wpex-adapt' => $total,
 				'mid_size' => 2,
 				'type' => 'list',
 				'prev_text' => '&laquo;',

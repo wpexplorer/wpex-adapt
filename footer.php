@@ -43,7 +43,7 @@
 				<?php endif; ?>
 			</div><!-- /copyright -->
 			<div id="back-to-top">
-				<a href="#toplink" class="scroll-top" title="<?php _e( 'Scroll Up', 'adapt' ); ?>"><?php _e( 'Scroll Up', 'adapt' ); ?> &uarr;</a>
+				<a href="#toplink" class="scroll-top" title="<?php _e( 'Scroll Up', 'wpex-adapt' ); ?>"><?php _e( 'Scroll Up', 'wpex-adapt' ); ?> &uarr;</a>
 			</div><!-- #back-to-top -->
 		</div><!-- #footer-bottom -->
 	</div><!-- #footer -->

@@ -27,7 +27,7 @@ if ( $wpex_query->posts ) : ?>
 		// Display highlights section heading if enabled
 		if ( '1' == wpex_get_data( 'home_highlights_heading' ) ) : ?>
 			<h2 class="heading">
-				<span><?php echo wpex_get_data('home_highlights_heading_txt', __( 'Features', 'adapt' ) ); ?></span>
+				<span><?php echo wpex_get_data('home_highlights_heading_txt', __( 'Features', 'wpex-adapt' ) ); ?></span>
 			</h2>
 		<?php endif; ?>
 		<div class="wpex-row wpex-clr">

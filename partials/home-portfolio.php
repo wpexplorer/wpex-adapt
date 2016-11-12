@@ -36,7 +36,7 @@ if ( $wpex_query->posts ) : ?>
 		// Display portfolio section heading
 		if ( '1' == wpex_get_data( 'home_port_heading', '1' )) { ?>
 			<h2 class="heading">
-				<span><?php echo wpex_get_data( 'home_port_heading_txt', __( 'Recent Work', 'adapt' ) ); ?></span>
+				<span><?php echo wpex_get_data( 'home_port_heading_txt', __( 'Recent Work', 'wpex-adapt' ) ); ?></span>
 			</h2>
 		<?php } ?>
 		<div class="wpex-row wpex-clr">

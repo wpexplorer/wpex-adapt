@@ -18,8 +18,8 @@ while ( have_posts() ) : the_post(); ?>
 		<header id="page-heading">
 			<h1><?php the_title(); ?></h1>
 			<nav id="single-nav" class="clearfix"> 
-				<?php next_post_link('<div id="single-nav-left">%link</div>', '<span class="fa fa-chevron-left"></span> '.__('Newer','adapt').'', false); ?>
-				<?php previous_post_link('<div id="single-nav-right">%link</div>', ''.__('Older','adapt').' <span class="fa fa-chevron-right"></span>', false); ?>
+				<?php next_post_link('<div id="single-nav-left">%link</div>', '<span class="fa fa-chevron-left"></span> '.__('Newer','wpex-adapt').'', false); ?>
+				<?php previous_post_link('<div id="single-nav-right">%link</div>', ''.__('Older','wpex-adapt').' <span class="fa fa-chevron-right"></span>', false); ?>
 			</nav><!-- #single-nav --> 
 		</header><!-- #page-heading -->
 

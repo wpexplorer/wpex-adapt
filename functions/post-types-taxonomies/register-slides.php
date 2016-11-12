@@ -27,17 +27,17 @@ if ( ! class_exists( 'WPEX_Slides_Post_Type' ) ) {
 		public function slides_init() {
 			$args = apply_filters( 'wpex_slides_args', $args = array(
 					'labels'			=> array(
-					'name'					=> __( 'Slides', 'adapt' ),
-					'menu_name'				=> __( 'Home Slides', 'adapt' ),
-					'singular_name'			=> __( 'Slides Item', 'adapt' ),
-					'add_new'				=> __( 'Add New Item', 'adapt' ),
-					'add_new_item'			=> __( 'Add New Slides Item', 'adapt' ),
-					'edit_item'				=> __( 'Edit Slides Item', 'adapt' ),
-					'new_item'				=> __( 'Add New Slides Item', 'adapt' ),
-					'view_item'				=> __( 'View Item', 'adapt' ),
-					'search_items'			=> __( 'Search Slides', 'adapt' ),
-					'not_found'				=> __( 'No slides items found', 'adapt' ),
-					'not_found_in_trash'	=> __( 'No slides items found in trash', 'adapt' )
+					'name'					=> __( 'Slides', 'wpex-adapt' ),
+					'menu_name'				=> __( 'Home Slides', 'wpex-adapt' ),
+					'singular_name'			=> __( 'Slides Item', 'wpex-adapt' ),
+					'add_new'				=> __( 'Add New Item', 'wpex-adapt' ),
+					'add_new_item'			=> __( 'Add New Slides Item', 'wpex-adapt' ),
+					'edit_item'				=> __( 'Edit Slides Item', 'wpex-adapt' ),
+					'new_item'				=> __( 'Add New Slides Item', 'wpex-adapt' ),
+					'view_item'				=> __( 'View Item', 'wpex-adapt' ),
+					'search_items'			=> __( 'Search Slides', 'wpex-adapt' ),
+					'not_found'				=> __( 'No slides items found', 'wpex-adapt' ),
+					'not_found_in_trash'	=> __( 'No slides items found in trash', 'wpex-adapt' )
 				),
 				'public'			=> true,
 				'supports'			=> array( 'title', 'thumbnail', 'custom-fields', 'editor' ),
@@ -52,8 +52,8 @@ if ( ! class_exists( 'WPEX_Slides_Post_Type' ) ) {
 		public function slides_edit_columns( $slides_columns ) {
 			$slides_columns = array(
 				"cb"				=> "<input type=\"checkbox\" />",
-				"title"				=> __( 'Title', 'adapt' ),
-				"slides_thumbnail"	=> __( 'Thumbnail', 'adapt' )
+				"title"				=> __( 'Title', 'wpex-adapt' ),
+				"slides_thumbnail"	=> __( 'Thumbnail', 'wpex-adapt' )
 			);
 			return $slides_columns;
 		}
@@ -75,7 +75,7 @@ if ( ! class_exists( 'WPEX_Slides_Post_Type' ) ) {
 					if ( isset( $thumb ) ) {
 						echo $thumb;
 					} else {
-						echo __( 'None', 'adapt' );
+						echo __( 'None', 'wpex-adapt' );
 					}
 					break;
 				

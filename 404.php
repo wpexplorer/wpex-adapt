@@ -10,12 +10,12 @@
 get_header(); ?>
 
 	<header id="page-heading">
-		<h1 class="page-title"><?php _e( '404 Error', 'adapt' ); ?></h1>		
+		<h1 class="page-title"><?php _e( '404 Error', 'wpex-adapt' ); ?></h1>		
 	</header><!-- #page-heading -->
 	
 	<div class="content-area clearfix">
 		<div class="entry clearfix">
-			<p><?php _e( 'Sorry, the page you were looking for could not be found.', 'adapt' ); ?></p>
+			<p><?php _e( 'Sorry, the page you were looking for could not be found.', 'wpex-adapt' ); ?></p>
 		</div><!-- .entry -->
 	</div><!-- .content-area -->
 	

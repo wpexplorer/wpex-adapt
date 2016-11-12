@@ -1,3 +1,1 @@
-If you have translated the adapt theme to another language please submit a “Bug Report” so we can email you back for the translation and we’ll add it inside the theme in the next update - thanks!
-
-http://www.wpexplorer.com/bug-report/
+If you have translated the adapt theme to another language open a new issue or submit a pull-request on the Github repository: https://github.com/wpexplorer/wpex-adapt

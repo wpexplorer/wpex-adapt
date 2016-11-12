@@ -38,16 +38,16 @@ if ( ! class_exists( 'WPEX_Portfolio_Post_Type' ) ) {
 			 */
 
 			$labels = array(
-				'name'					=> __( 'Portfolio', 'adapt' ),
-				'singular_name'			=> __( 'Portfolio Item', 'adapt' ),
-				'add_new'				=> __( 'Add New Item', 'adapt' ),
-				'add_new_item'			=> __( 'Add New Portfolio Item', 'adapt' ),
-				'edit_item'				=> __( 'Edit Portfolio Item', 'adapt' ),
-				'new_item'				=> __( 'Add New Portfolio Item', 'adapt' ),
-				'view_item'				=> __( 'View Item', 'adapt' ),
-				'search_items'			=> __( 'Search Portfolio', 'adapt' ),
-				'not_found'				=> __( 'No portfolio items found', 'adapt' ),
-				'not_found_in_trash'	=> __( 'No portfolio items found in trash', 'adapt' )
+				'name'					=> __( 'Portfolio', 'wpex-adapt' ),
+				'singular_name'			=> __( 'Portfolio Item', 'wpex-adapt' ),
+				'add_new'				=> __( 'Add New Item', 'wpex-adapt' ),
+				'add_new_item'			=> __( 'Add New Portfolio Item', 'wpex-adapt' ),
+				'edit_item'				=> __( 'Edit Portfolio Item', 'wpex-adapt' ),
+				'new_item'				=> __( 'Add New Portfolio Item', 'wpex-adapt' ),
+				'view_item'				=> __( 'View Item', 'wpex-adapt' ),
+				'search_items'			=> __( 'Search Portfolio', 'wpex-adapt' ),
+				'not_found'				=> __( 'No portfolio items found', 'wpex-adapt' ),
+				'not_found_in_trash'	=> __( 'No portfolio items found in trash', 'wpex-adapt' )
 			);
 			
 			$args = array(
@@ -71,21 +71,21 @@ if ( ! class_exists( 'WPEX_Portfolio_Post_Type' ) ) {
 			 */
 
 			$taxonomy_portfolio_category_labels = array(
-				'name'							=> __( 'Portfolio Categories', 'adapt' ),
-				'singular_name'					=> __( 'Portfolio Category', 'adapt' ),
-				'search_items'					=> __( 'Search Portfolio Categories', 'adapt' ),
-				'popular_items'					=> __( 'Popular Portfolio Categories', 'adapt' ),
-				'all_items'						=> __( 'All Portfolio Categories', 'adapt' ),
-				'parent_item'					=> __( 'Parent Portfolio Category', 'adapt' ),
-				'parent_item_colon'				=> __( 'Parent Portfolio Category:', 'adapt' ),
-				'edit_item'						=> __( 'Edit Portfolio Category', 'adapt' ),
-				'update_item'					=> __( 'Update Portfolio Category', 'adapt' ),
-				'add_new_item'					=> __( 'Add New Portfolio Category', 'adapt' ),
-				'new_item_name'					=> __( 'New Portfolio Category Name', 'adapt' ),
-				'separate_items_with_commas'	=> __( 'Separate portfolio categories with commas', 'adapt' ),
-				'add_or_remove_items'			=> __( 'Add or remove portfolio categories', 'adapt' ),
-				'choose_from_most_used'			=> __( 'Choose from the most used portfolio categories', 'adapt' ),
-				'menu_name'						=> __( 'Portfolio Categories', 'adapt' ),
+				'name'							=> __( 'Portfolio Categories', 'wpex-adapt' ),
+				'singular_name'					=> __( 'Portfolio Category', 'wpex-adapt' ),
+				'search_items'					=> __( 'Search Portfolio Categories', 'wpex-adapt' ),
+				'popular_items'					=> __( 'Popular Portfolio Categories', 'wpex-adapt' ),
+				'all_items'						=> __( 'All Portfolio Categories', 'wpex-adapt' ),
+				'parent_item'					=> __( 'Parent Portfolio Category', 'wpex-adapt' ),
+				'parent_item_colon'				=> __( 'Parent Portfolio Category:', 'wpex-adapt' ),
+				'edit_item'						=> __( 'Edit Portfolio Category', 'wpex-adapt' ),
+				'update_item'					=> __( 'Update Portfolio Category', 'wpex-adapt' ),
+				'add_new_item'					=> __( 'Add New Portfolio Category', 'wpex-adapt' ),
+				'new_item_name'					=> __( 'New Portfolio Category Name', 'wpex-adapt' ),
+				'separate_items_with_commas'	=> __( 'Separate portfolio categories with commas', 'wpex-adapt' ),
+				'add_or_remove_items'			=> __( 'Add or remove portfolio categories', 'wpex-adapt' ),
+				'choose_from_most_used'			=> __( 'Choose from the most used portfolio categories', 'wpex-adapt' ),
+				'menu_name'						=> __( 'Portfolio Categories', 'wpex-adapt' ),
 		);
 
 			$taxonomy_portfolio_category_args = array(
@@ -111,8 +111,8 @@ if ( ! class_exists( 'WPEX_Portfolio_Post_Type' ) ) {
 		 */
 
 		function portfolio_edit_columns( $columns ) {
-			$columns['portfolio_thumbnail']	= __( 'Thumbnail', 'adapt' );
-			$columns['portfolio_category']	= __( 'Category', 'adapt' );
+			$columns['portfolio_thumbnail']	= __( 'Thumbnail', 'wpex-adapt' );
+			$columns['portfolio_category']	= __( 'Category', 'wpex-adapt' );
 			return $columns;
 		}
 
@@ -135,7 +135,7 @@ if ( ! class_exists( 'WPEX_Portfolio_Post_Type' ) ) {
 					if ( isset( $thumb ) ) {
 						echo $thumb;
 					} else {
-						echo __( 'None', 'adapt' );
+						echo __( 'None', 'wpex-adapt' );
 					}
 					break;	
 
@@ -145,7 +145,7 @@ if ( ! class_exists( 'WPEX_Portfolio_Post_Type' ) ) {
 				if ( $category_list = get_the_term_list( $post_id, 'portfolio_category', '', ', ', '' ) ) {
 					echo $category_list;
 				} else {
-					echo __( 'None', 'adapt' );
+					echo __( 'None', 'wpex-adapt' );
 				}
 				break;	
 		

@@ -1,8 +1,9 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Adapt WordPress Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-19 13:13-0800\n"
+"POT-Creation-Date: 2016-11-12 11:20-0800\n"
 "PO-Revision-Date: 2016-02-19 13:13-0800\n"
 "Last-Translator: AJ Clarke <wpexplorer@gmail.com>\n"
 "Language-Team: WPExplorer.com\n"
@@ -13,9 +14,9 @@ msgstr ""
 "_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;_nx_noop:4c,1,2;"
 "_nx;_esc_attr__;esc_attr_x;esc_attr_e;esc_html__;esc_html_e;esc_html_x;__;"
 "_e\n"
-"X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.5.5\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: ../404.php:13
 msgid "404 Error"

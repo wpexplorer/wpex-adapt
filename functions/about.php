@@ -15,6 +15,7 @@ class WPEX_Welcome {
 	private $theme_name;
 	private $theme_url;
 	private $theme_changelog;
+	private $github_repo;
 	private $dir;
 
 	/**
@@ -28,6 +29,7 @@ class WPEX_Welcome {
 		$info = wpex_get_theme_info();
 		$this->theme_name      = $info['name'];
 		$this->theme_url       = $info['url'];
+		$this->github_repo     = $info['github_repo'];
 		$this->theme_changelog = $info['changelog'];
 		$this->dir             = $info['dir'];
 
@@ -49,8 +51,8 @@ class WPEX_Welcome {
 	public function admin_menus() {
 		
 		add_menu_page(
-			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-gopress' ),
-			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-gopress' ),
+			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-adapt' ),
+			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-adapt' ),
 			'manage_options',
 			'wpex-theme',
 			array( $this, 'recommended_screen' ),
@@ -88,26 +90,26 @@ class WPEX_Welcome {
 
 			<h1><?php echo esc_html( $this->theme_name ); ?> Theme v<?php echo esc_html( $theme_version ); ?></h1>
 
-			<div class="about-text" style="margin-bottom:40px;min-height:0;"><?php esc_html_e( 'A free WordPress theme by WPExplorer', 'wpex-gopress' ); ?> | <a href="<?php echo esc_url( $this->theme_changelog ); ?>" target="_blank"><?php esc_html_e( 'Changelog', 'wpex-gopress' ); ?></a> | <a href="<?php echo esc_url( $this->theme_url ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'wpex-gopress' ); ?></a> | <a href="http://www.wpexplorer.com/wordpress-themes/" target="_blank"><?php esc_html_e( 'More Themes', 'wpex-gopress' ); ?></a></div>
+			<div class="about-text" style="margin-bottom:40px;min-height:0;"><?php esc_html_e( 'A free WordPress theme by WPExplorer', 'wpex-adapt' ); ?> | <a href="<?php echo esc_url( $this->theme_changelog ); ?>" target="_blank"><?php esc_html_e( 'Changelog', 'wpex-adapt' ); ?></a> | <a href="<?php echo esc_url( $this->theme_url ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'wpex-adapt' ); ?></a> | <a href="<?php echo esc_url( $this->github_repo ); ?>" target="_blank"><?php esc_html_e( 'Github', 'wpex-adapt' ); ?></a> | <a href="http://www.wpexplorer.com/wordpress-themes/" target="_blank"><?php esc_html_e( 'More Themes', 'wpex-adapt' ); ?></a></div>
 
 			<div style="padding-bottom:100px;">
 
-				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'About', 'wpex-gopress' ); ?></h2>
+				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'About', 'wpex-adapt' ); ?></h2>
 				<hr />
 
 				<div>
-					<h4><?php esc_html_e( 'GPL License', 'wpex-gopress' ); ?></h4>
-					<p><?php esc_html_e( 'This theme is licensed under the GPL license. This means you can use it for anything you like as long as it remains GPL.', 'wpex-gopress' ); ?></p>
+					<h4><?php esc_html_e( 'GPL License', 'wpex-adapt' ); ?></h4>
+					<p><?php esc_html_e( 'This theme is licensed under the GPL license. This means you can use it for anything you like as long as it remains GPL.', 'wpex-adapt' ); ?></p>
 				</div>
 
 				<div>
-					<h4><?php esc_html_e( 'Credits', 'wpex-gopress' ); ?></h4>
+					<h4><?php esc_html_e( 'Credits', 'wpex-adapt' ); ?></h4>
 					<p>
-					<?php esc_html_e( 'This theme was created by:', 'wpex-gopress' ); ?> <a href="http://www.wpexplorer.com/">WPExplorer</a>
+					<?php esc_html_e( 'This theme was created by:', 'wpex-adapt' ); ?> <a href="http://www.wpexplorer.com/">WPExplorer</a>
 					<br />
-					<?php esc_html_e( 'We work hard to develop, support and update this theme.', 'wpex-gopress' ); ?>
+					<?php esc_html_e( 'We work hard to develop, support and update this theme.', 'wpex-adapt' ); ?>
 					<br />
-					<?php esc_html_e( 'A back-link to our website is very much appreciated or you can follow us via our social media!', 'wpex-gopress' ); ?>
+					<?php esc_html_e( 'A back-link to our website is very much appreciated or you can follow us via our social media!', 'wpex-adapt' ); ?>
 					</p>
 					<p>
 						<a href="https://twitter.com/WPExplorer" class="button button-secondary">Twitter</a>
@@ -118,14 +120,15 @@ class WPEX_Welcome {
 
 				<br /><br />
 
-				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'Getting Started', 'wpex-gopress' ); ?></h2>
+				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'Getting Started', 'wpex-adapt' ); ?></h2>
 
 				<hr />
 
 				<div>
 					<p>
-					<?php esc_html_e( 'Below you will find some useful links to get you started with this theme.', 'wpex-gopress' ); ?>
+					<?php esc_html_e( 'Below you will find some useful links to get you started with this theme.', 'wpex-adapt' ); ?>
 					</p>
+					<a href="<?php echo esc_url( admin_url( 'themes.php?page=optionsframework' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Theme Options', 'wpex-adapt' ); ?></a>
 					<?php
 					// Customizer url
 					$customize_url = add_query_arg(
@@ -134,18 +137,18 @@ class WPEX_Welcome {
 						),
 						'customize.php'
 					); ?>
-					<a href="<?php echo esc_url( $customize_url ); ?>" class="button button-primary load-customize hide-if-no-customize"><?php esc_html_e( 'Customize Your Site', 'wpex-gopress' ); ?></a>
+					<a href="<?php echo esc_url( $customize_url ); ?>" class="button button-primary load-customize hide-if-no-customize"><?php esc_html_e( 'Customize Your Site', 'wpex-adapt' ); ?></a>
 				</div>
 
 				<br /><br />
 
-				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'Recommendations', 'wpex-gopress' ); ?></h2>
+				<h2 style="text-align:left;font-size:18px;font-weight:bold;margin:0 0 5px;line-height:1em;"><?php esc_html_e( 'Recommendations', 'wpex-adapt' ); ?></h2>
 
 				<hr />
 
 				<div>
-				<h4><?php esc_html_e( 'Plugins', 'wpex-gopress' ); ?></h4>
-				<p><?php esc_html_e( 'Below you will find links to plugins we (WPExplorer.com staff) personally like and recommend. None of these plugins are required for your theme to work, they simply add additional functionality.', 'wpex-gopress' ); ?></p>
+				<h4><?php esc_html_e( 'Plugins', 'wpex-adapt' ); ?></h4>
+				<p><?php esc_html_e( 'Below you will find links to plugins we (WPExplorer.com staff) personally like and recommend. None of these plugins are required for your theme to work, they simply add additional functionality.', 'wpex-adapt' ); ?></p>
 
 					<ul style="list-style: disc;margin: 20px 0 0 20px;">
 						<li><span style="font-weight:bold">Backups:</span> <a href="https://vaultpress.com/" target="_blank">VaultPress</a></li>
@@ -161,8 +164,8 @@ class WPEX_Welcome {
 				<hr />
 
 				<div>
-					<h4><?php esc_html_e( 'Total Drag & Drop Theme', 'wpex-gopress' ); ?></h4>
-					<p><?php esc_html_e( 'Check out our most advanced (yet easy to use) and flexible theme to date.', 'wpex-gopress' ); ?></p>
+					<h4><?php esc_html_e( 'Total Drag & Drop Theme', 'wpex-adapt' ); ?></h4>
+					<p><?php esc_html_e( 'Check out our most advanced (yet easy to use) and flexible theme to date.', 'wpex-adapt' ); ?></p>
 					<a href="http://wpexplorer-themes.com/total/" target="_blank"><img src="<?php echo esc_url( $this->dir ); ?>total.jpg" alt="Total WordPress Theme" /></a>
 				</div>
 
@@ -170,8 +173,8 @@ class WPEX_Welcome {
 				<hr />
 
 				<div>
-					<h4><?php esc_html_e( 'WordPress Hosting', 'wpex-gopress' ); ?></h4>
-					<p><?php esc_html_e( 'If you need fast and reliable hosting we recommend the same host we use and love WPEngine.', 'wpex-gopress' ); ?></p>
+					<h4><?php esc_html_e( 'WordPress Hosting', 'wpex-adapt' ); ?></h4>
+					<p><?php esc_html_e( 'If you need fast and reliable hosting we recommend the same host we use and love WPEngine.', 'wpex-adapt' ); ?></p>
 					<a href="http://www.wpexplorer.com/wordpress-hosting/" class="button button-primary" target="_blank"> WordPress Hosting</a>
 				</div>
 
@@ -179,8 +182,8 @@ class WPEX_Welcome {
 				<hr />
 
 				<div>
-					<h4><?php esc_html_e( 'Deals & Coupons', 'wpex-gopress' ); ?></h4>
-					<p><?php esc_html_e( 'Check out our coupons page for great deals on WordPress resources.', 'wpex-gopress' ); ?></p>
+					<h4><?php esc_html_e( 'Deals & Coupons', 'wpex-adapt' ); ?></h4>
+					<p><?php esc_html_e( 'Check out our coupons page for great deals on WordPress resources.', 'wpex-adapt' ); ?></p>
 					<a href="http://www.wpexplorer.com/coupons/" class="button button-primary" target="_blank">View Deals/Coupons</a>
 				</div>
 

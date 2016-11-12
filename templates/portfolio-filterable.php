@@ -21,7 +21,7 @@
 		<?php $terms = get_terms( 'portfolio_category' ); ?>
 		<?php if( $terms[0] ) { ?>
 			<ul id="portfolio-cats" class="filter clearfix">
-				<li><a href="#" class="active" data-filter="*"><span><?php _e('All', 'adapt'); ?></span></a></li>
+				<li><a href="#" class="active" data-filter="*"><span><?php _e('All', 'wpex-adapt'); ?></span></a></li>
 				<?php foreach ($terms as $term ) : ?>
 					<li><a href="#" data-filter=".<?php echo $term->slug; ?>"><span><?php echo $term->name; ?></span></a></li>
 				<?php endforeach; ?>

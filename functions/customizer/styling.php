@@ -22,7 +22,7 @@ class WPEX_Theme_Customizer_Styling {
 
 			// Theme Design Section
 			$wp_customize->add_section( 'wpex_styling' , array(
-				'title'		=> __( 'Styling', 'adapt' ),
+				'title'		=> __( 'Styling', 'wpex-adapt' ),
 				'priority'	=> 202,
 			) );
 
@@ -100,7 +100,7 @@ class WPEX_Theme_Customizer_Styling {
 		$array = array();
 
 		$array[] = array(
-			'label'		=> __( 'Header Top Padding', 'adapt' ),
+			'label'		=> __( 'Header Top Padding', 'wpex-adapt' ),
 			'id'		=> 'header_top_pad',
 			'element'	=> '#masterhead',
 			'style'		=> 'padding-top',
@@ -109,7 +109,7 @@ class WPEX_Theme_Customizer_Styling {
 		);
 
 		$array[] = array(
-			'label'		=> __( 'Header Bottom Padding', 'adapt' ),
+			'label'		=> __( 'Header Bottom Padding', 'wpex-adapt' ),
 			'id'		=> 'header_bottom_pad',
 			'element'	=> '#masterhead',
 			'style'		=> 'padding-bottom',
@@ -118,231 +118,231 @@ class WPEX_Theme_Customizer_Styling {
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Logo Text Color', 'adapt' ),
+			'label'		=>	__( 'Logo Text Color', 'wpex-adapt' ),
 			'id'		=>	'logo_color',
 			'element'	=> '#logo a',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Header Top Border Color', 'adapt' ),
+			'label'		=>	__( 'Header Top Border Color', 'wpex-adapt' ),
 			'id'		=>	'masthead_bottom_border_color',
 			'element'	=> '#masterhead',
 			'style'		=> 'border-bottom-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Header Bottom Border Color', 'adapt' ),
+			'label'		=>	__( 'Header Bottom Border Color', 'wpex-adapt' ),
 			'id'		=>	'page_heading_bottom_border_color',
 			'element'	=> '#page-heading, #home-tagline',
 			'style'		=> 'border-bottom-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Menu Link Color', 'adapt' ),
+			'label'		=>	__( 'Menu Link Color', 'wpex-adapt' ),
 			'id'		=>	'nav_link_color',
 			'element'	=> '#masternav .sf-menu > li > a',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Menu Link Hover Color', 'adapt' ),
+			'label'		=>	__( 'Menu Link Hover Color', 'wpex-adapt' ),
 			'id'		=>	'nav_link_hover_color',
 			'element'	=> '#masternav .sf-menu > li > a:hover, #masternav .sf-menu > li.sfHover > a',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Active Menu Link Color', 'adapt' ),
+			'label'		=>	__( 'Active Menu Link Color', 'wpex-adapt' ),
 			'id'		=>	'nav_link_active_color',
 			'element'	=> '#masternav .current-menu-item > a, #masternav .sf-menu > li.current-menu-item > a:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Background', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Background', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_bg',
 			'element'	=> '#masternav .sf-menu ul',
 			'style'		=> 'background',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Border', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Border', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_border',
 			'element'	=> '#masternav .sf-menu ul',
 			'style'		=> 'border-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Link Bottom Border', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Link Bottom Border', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_link_border',
 			'element'	=> '#masternav .sf-menu ul li',
 			'style'		=> 'border-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Link Color', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Link Color', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_link_color',
 			'element'	=> '#masternav .sf-menu ul > li > a',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Link Hover Color', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Link Hover Color', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_link_hover_color',
 			'element'	=> '#masternav .sf-menu ul > li > a:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sub-Menu Link Hover Background', 'adapt' ),
+			'label'		=>	__( 'Sub-Menu Link Hover Background', 'wpex-adapt' ),
 			'id'		=>	'nav_drop_link_hover_bg',
 			'element'	=> '#masternav .sf-menu ul > li > a:hover',
 			'style'		=> 'background',
 		);
 
 		$array[] = array(
-			'label'			=>	__( 'Mobile Menu Background', 'adapt' ),
+			'label'			=>	__( 'Mobile Menu Background', 'wpex-adapt' ),
 			'id'			=>	'mobile_nav_bg',
 			'element'		=> '.slicknav_btn',
 			'style'			=> 'background',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Mobile Menu Link Color', 'adapt' ),
+			'label'		=>	__( 'Mobile Menu Link Color', 'wpex-adapt' ),
 			'id'		=>	'mobile_nav_link_color',
 			'element'	=> '.slicknav_btn, .slicknav_menu .slicknav_icon',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Mobile Menu Link Hover Color', 'adapt' ),
+			'label'		=>	__( 'Mobile Menu Link Hover Color', 'wpex-adapt' ),
 			'id'		=>	'mobile_nav_link_hover_color',
 			'element'	=> '.slicknav_btn:hover, .slicknav_menu .slicknav_icon:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Mobile Menu Borders', 'adapt' ),
+			'label'		=>	__( 'Mobile Menu Borders', 'wpex-adapt' ),
 			'id'		=>	'mobile_nav_borders',
 			'element'	=> '.wpex-mobile-nav-ul li a',
 			'style'		=> 'border-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Background', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Background', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_bg',
 			'element'	=> '#footer',
 			'style'		=> 'background',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Text', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Text', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_color',
 			'element'	=> 'footer, #footer p',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Heading', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Heading', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_headings',
 			'element'	=> '#footer h2, #footer h3, #footer h4, #footer h5,  #footer h6, #footer-widgets .widget-title',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Links', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Links', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_links_color',
 			'element'	=> '#footer a, #footer-widgets .widget_nav_menu ul > li li a:before',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Links Hover', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Links Hover', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_links_hover_color',
 			'element'	=> '#footer a:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Footer Widgets Borders', 'adapt' ),
+			'label'		=>	__( 'Footer Widgets Borders', 'wpex-adapt' ),
 			'id'		=>	'footer_widgets_borders',
 			'element'	=> '#footer-widgets .widget_nav_menu ul > li, #footer-widgets .widget_nav_menu ul > li a, .footer-widget > ul > li:first-child, .footer-widget > ul > li, .footer-widget h6, #footer-bottom',
 			'style'		=> 'border-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Entry Title Hover Color', 'adapt' ),
+			'label'		=>	__( 'Entry Title Hover Color', 'wpex-adapt' ),
 			'id'		=>	'entry_title_hover_color',
 			'element'	=> '.loop-entry h2 a:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Link Color', 'adapt' ),
+			'label'		=>	__( 'Link Color', 'wpex-adapt' ),
 			'id'		=>	'link_color',
 			'element'	=> '.entry a, #sidebar a, .loop-entry-meta a, .post-meta a, .comment-meta a.url',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Post Link Hover Color', 'adapt' ),
+			'label'		=>	__( 'Post Link Hover Color', 'wpex-adapt' ),
 			'id'		=>	'link_hover_color',
 			'element'	=> '.entry a:hover, #sidebar a:hover, .loop-entry-meta a:hover, .post-meta a:hover, .comment-meta a.url:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sidebar Link Color', 'adapt' ),
+			'label'		=>	__( 'Sidebar Link Color', 'wpex-adapt' ),
 			'id'		=>	'sidebar_link_color',
 			'element'	=> '#sidebar a',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Sidebar Link Hover Color', 'adapt' ),
+			'label'		=>	__( 'Sidebar Link Hover Color', 'wpex-adapt' ),
 			'id'		=>	'sidebar_link_hover_color',
 			'element'	=> '#sidebar a:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Theme Button Color', 'adapt' ),
+			'label'		=>	__( 'Theme Button Color', 'wpex-adapt' ),
 			'id'		=>	'theme_button_color',
 			'element'	=> 'input[type="button"], input[type="submit"], .page-numbers a:hover, .page-numbers.current, .page-links span, .page-links a:hover span',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Theme Button Background', 'adapt' ),
+			'label'		=>	__( 'Theme Button Background', 'wpex-adapt' ),
 			'id'		=>	'theme_button_bg',
 			'element'	=> 'input[type="button"], input[type="submit"], .page-numbers a:hover, .page-numbers.current, .page-links span, .page-links a:hover span',
 			'style'		=> 'background',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Theme Button Hover Color', 'adapt' ),
+			'label'		=>	__( 'Theme Button Hover Color', 'wpex-adapt' ),
 			'id'		=>	'theme_button_hover_color',
 			'element'	=> 'input[type="button"]:hover, input[type="submit"]:hover',
 			'style'		=> 'color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Theme Button Hover Background', 'adapt' ),
+			'label'		=>	__( 'Theme Button Hover Background', 'wpex-adapt' ),
 			'id'		=>	'theme_button_hover_bg',
 			'element'	=> 'input[type="button"]:hover, input[type="submit"]:hover',
 			'style'		=> 'background-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Slider Arrow Hover Background', 'adapt' ),
+			'label'		=>	__( 'Slider Arrow Hover Background', 'wpex-adapt' ),
 			'id'		=>	'slider_arrow_hover_bg',
 			'element'	=> '.flex-direction-nav li a.flex-prev:hover, .flex-direction-nav li a.flex-next:hover',
 			'style'		=> 'background-color',
 		);
 
 		$array[] = array(
-			'label'		=>	__( 'Slider Arrow Hover Color', 'adapt' ),
+			'label'		=>	__( 'Slider Arrow Hover Color', 'wpex-adapt' ),
 			'id'		=>	'slider_arrow_hover_color',
 			'element'	=> '.flex-direction-nav li a.flex-prev:hover, .flex-direction-nav li a.flex-next:hover',
 			'style'		=> 'color',

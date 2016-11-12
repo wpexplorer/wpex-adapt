@@ -53,7 +53,7 @@ if ( ! class_exists( 'WPEX_Gallery_Metabox' ) ) {
 			foreach ( $types as $type ) {
 				add_meta_box(
 					'wpex-gallery-metabox',			// ID
-					__( 'Image Gallery', 'adapt' ),	// Title
+					__( 'Image Gallery', 'wpex-adapt' ),	// Title
 					array( $this, 'render' ),		// Callback
 					$type,							// Post type
 					'normal',						// Cotext
@@ -79,7 +79,7 @@ if ( ! class_exists( 'WPEX_Gallery_Metabox' ) ) {
 							if ( wp_attachment_is_image ( $attachment_id  ) ) {
 								echo '<li class="image" data-attachment_id="' . $attachment_id . '"><div class="attachment-preview"><div class="thumbnail">
 											' . wp_get_attachment_image( $attachment_id, 'thumbnail' ) . '</div>
-											<a href="#" class="wpex-gmb-remove" title="' . __( 'Remove image', 'adapt' ) . '"><div class="media-modal-icon"></div></a>
+											<a href="#" class="wpex-gmb-remove" title="' . __( 'Remove image', 'wpex-adapt' ) . '"><div class="media-modal-icon"></div></a>
 										</div></li>';
 							}
 						}
@@ -89,7 +89,7 @@ if ( ! class_exists( 'WPEX_Gallery_Metabox' ) ) {
 				<?php wp_nonce_field( 'easy_image_gallery', 'easy_image_gallery' ); ?>
 			</div>
 			<p class="add_wpex_gallery_images hide-if-no-js">
-				<a href="#" class="button-primary"><?php _e( 'Add/Edit Images', 'adapt' ); ?></a>
+				<a href="#" class="button-primary"><?php _e( 'Add/Edit Images', 'wpex-adapt' ); ?></a>
 			</p>
 			<?php
 			// options don't exist yet, set to checked by default
@@ -117,9 +117,9 @@ if ( ! class_exists( 'WPEX_Gallery_Metabox' ) ) {
 						// Create the media frame.
 						image_gallery_frame = wp.media.frames.downloadable_file = wp.media({
 							// Set the title of the modal.
-							title: "<?php _e( 'Add Images to Gallery', 'adapt' ); ?>",
+							title: "<?php _e( 'Add Images to Gallery', 'wpex-adapt' ); ?>",
 							button: {
-								text: "<?php _e( 'Add to gallery', 'adapt' ); ?>",
+								text: "<?php _e( 'Add to gallery', 'wpex-adapt' ); ?>",
 							},
 							multiple: true
 						});
@@ -136,7 +136,7 @@ if ( ! class_exists( 'WPEX_Gallery_Metabox' ) ) {
 												<div class="thumbnail">\
 													<img src="' + attachment.url + '" />\
 												</div>\
-											   <a href="#" class="wpex-gmb-remove" title="<?php _e( 'Remove image', 'adapt' ); ?>"><div class="media-modal-icon"></div></a>\
+											   <a href="#" class="wpex-gmb-remove" title="<?php _e( 'Remove image', 'wpex-adapt' ); ?>"><div class="media-modal-icon"></div></a>\
 											</div>\
 										</li>');
 								}

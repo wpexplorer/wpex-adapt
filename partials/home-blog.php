@@ -37,7 +37,7 @@ if ( $wpex_posts_query->posts ) : ?>
 		// Display blog section heading if enabled
 		if ( '1' == wpex_get_data( 'home_blog_heading', '1' ) ) { ?>
 			<h2 class="heading">
-				<span><?php echo esc_html( wpex_get_data( 'home_blog_heading_txt', __( 'Recent News', 'adapt' ) ) ); ?></span>
+				<span><?php echo esc_html( wpex_get_data( 'home_blog_heading_txt', __( 'Recent News', 'wpex-adapt' ) ) ); ?></span>
 			</h2>
 		<?php } ?>
 		<div class="wpex-row wpex-clr">

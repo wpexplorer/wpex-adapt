@@ -4,7 +4,7 @@
  *
  * @package Adapt WordPress Theme
  * @subpackage Functions
- * @version 2.2.0
+ * @version 3.1
  */
 
 function wpex_setup() {
@@ -15,14 +15,12 @@ function wpex_setup() {
 	}
 	
 	// Localization support
-	load_theme_textdomain( 'adapt', get_template_directory() .'/languages' );
+	load_theme_textdomain( 'wpex-adapt', get_template_directory() .'/languages' );
 
 	// Register navigation menus
-	register_nav_menus (
-		array(
-			'menu' => __( 'Main', 'adapt' )
-		)
-	);
+	register_nav_menus ( array(
+		'menu' => esc_html__( 'Main', 'wpex-adapt' )
+	) );
 		
 	// Add theme support
 	add_theme_support( 'title-tag' );

@@ -47,7 +47,7 @@ function wpex_esc_title() {
 if ( ! function_exists( 'wpex_port_cat_array' ) ) {
 	function wpex_port_cat_array() {
 		$port_categories = array();  
-		if ( !taxonomy_exists( 'portfolio_category' ) ) return array( __( 'No terms', 'adapt' ) );
+		if ( !taxonomy_exists( 'portfolio_category' ) ) return array( __( 'No terms', 'wpex-adapt' ) );
 		$port_categories_obj = get_terms( 'portfolio_category', array( 'hide_empty'	=> '0' ) );
 		foreach ($port_categories_obj as $port_cat) {
 			$port_categories[$port_cat->term_id] = $port_cat->slug;}
@@ -98,7 +98,7 @@ if ( ! function_exists( 'wpex_pagination') ) {
 				'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 				'format'    => $format,
 				'current'   => max( 1, get_query_var( 'paged') ),
-				'adapt'     => $total,
+				'wpex-adapt'     => $total,
 				'mid_size'  => 2,
 				'type'      => 'list',
 				'prev_text' => '&laquo;',

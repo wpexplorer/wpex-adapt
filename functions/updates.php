@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Theme Data
 $api_url     = 'https://wpexplorer-updates.com/api/v1';
-$theme_slug  = 'adapt';
+$theme_slug  = 'wpex-adapt';
 $license_key = null; // no API for CM yet...
 
 // Updater class

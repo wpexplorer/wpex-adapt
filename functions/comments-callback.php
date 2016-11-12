@@ -25,7 +25,7 @@ if ( ! function_exists( 'wpex_comment' ) ) :
 			// Display trackbacks differently than normal comments.
 		?>
 		<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
-			<p><?php _e( 'Pingback:', 'adapt' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'adapt' ), '<span class="ping-meta"><span class="edit-link">', '</span></span>' ); ?></p>
+			<p><?php _e( 'Pingback:', 'wpex-adapt' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'wpex-adapt' ), '<span class="ping-meta"><span class="edit-link">', '</span></span>' ); ?></p>
 		<?php
 				break;
 			default :
@@ -48,13 +48,13 @@ if ( ! function_exists( 'wpex_comment' ) ) :
 							printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
 								esc_url( get_comment_link( $comment->comment_ID ) ),
 								get_comment_time( 'c' ),
-								sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'adapt' ), get_comment_date(), get_comment_time() )
-							); ?> <?php edit_comment_link( __( 'Edit', 'adapt' ), '<span class="edit-link">', '<span>' ); ?>
+								sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'wpex-adapt' ), get_comment_date(), get_comment_time() )
+							); ?> <?php edit_comment_link( __( 'Edit', 'wpex-adapt' ), '<span class="edit-link">', '<span>' ); ?>
 						</div><!-- .comment-date -->
 					</header><!-- .comment-meta -->
 		
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'adapt' ); ?></p>
+						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'wpex-adapt' ); ?></p>
 					<?php endif; ?>
 		
 					<div class="comment-content">
@@ -62,7 +62,7 @@ if ( ! function_exists( 'wpex_comment' ) ) :
 					</div><!-- .comment-content -->
 		
 					<div class="reply">
-						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'reply to comment', 'adapt' ) . '&rarr;', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'reply to comment', 'wpex-adapt' ) . '&rarr;', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					</div><!-- .reply -->
 					
 				</div><!-- .comment-details -->

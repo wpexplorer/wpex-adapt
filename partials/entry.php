@@ -25,13 +25,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	// Display post meta for standard post type only.
 	if ( 'post' == get_post_type() ) : ?>
 		<ul class="loop-entry-meta">
-			<li class="loop-entry-meta-date"><i class="fa fa-clock-o"></i><?php _e( 'On','adapt' ); ?> <?php echo get_the_date(); ?></li>
-			<li class="loop-entry-meta-author"><i class="fa fa-user"></i><?php _e( 'By', 'adapt' ); ?> <?php the_author_posts_link(); ?></li>
+			<li class="loop-entry-meta-date"><i class="fa fa-clock-o"></i><?php _e( 'On','wpex-adapt' ); ?> <?php echo get_the_date(); ?></li>
+			<li class="loop-entry-meta-author"><i class="fa fa-user"></i><?php _e( 'By', 'wpex-adapt' ); ?> <?php the_author_posts_link(); ?></li>
 			<?php if ( comments_open() ) { ?>
-				<li class="loop-entry-meta-comments"><i class="fa fa-comments"></i><?php _e( 'With', 'adapt' ); ?>  <?php comments_popup_link(
-					'0 '. __( 'Comments', 'adapt' ),
-					'1 '. __( 'Comment', 'adapt' ),
-					'% '. __( 'Comments', 'adapt' )
+				<li class="loop-entry-meta-comments"><i class="fa fa-comments"></i><?php _e( 'With', 'wpex-adapt' ); ?>  <?php comments_popup_link(
+					'0 '. __( 'Comments', 'wpex-adapt' ),
+					'1 '. __( 'Comment', 'wpex-adapt' ),
+					'% '. __( 'Comments', 'wpex-adapt' )
 				); ?></li>
 			<?php } ?>
 		</ul><!-- .loop-entry-meta -->

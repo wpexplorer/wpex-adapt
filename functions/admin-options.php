@@ -10,12 +10,12 @@ if ( ! function_exists( 'of_options' ) ) {
 			), 
 			"enabled"	=> array(
 				"placebo"			=> "placebo", //REQUIRED!
-				"home_tagline"		=> __( 'Site Description', 'adapt' ),
-				"home_slider"		=> __( 'Slider', 'adapt' ),
-				"home_content"		=> __( 'Page Content', 'adapt' ),
-				"home_highlights"	=> __( 'Highlights', 'adapt' ),
-				"home_portfolio"	=> __( 'Portfolio', 'adapt' ),
-				"home_blog"			=> __( 'Blog', 'adapt' )
+				"home_tagline"		=> __( 'Site Description', 'wpex-adapt' ),
+				"home_slider"		=> __( 'Slider', 'wpex-adapt' ),
+				"home_content"		=> __( 'Page Content', 'wpex-adapt' ),
+				"home_highlights"	=> __( 'Highlights', 'wpex-adapt' ),
+				"home_portfolio"	=> __( 'Portfolio', 'wpex-adapt' ),
+				"home_blog"			=> __( 'Blog', 'wpex-adapt' )
 			),
 		);
 
@@ -50,8 +50,8 @@ if ( ! function_exists( 'of_options' ) ) {
 
 		//logos + fav
 		$of_options[] = array(
-			"name"	=> __( 'Custom Logo', 'adapt' ),
-			"desc"	=> __( 'Use this field to upload your custom logo for use in the theme header', 'adapt' ),
+			"name"	=> __( 'Custom Logo', 'wpex-adapt' ),
+			"desc"	=> __( 'Use this field to upload your custom logo for use in the theme header', 'wpex-adapt' ),
 			"id"	=> "custom_logo",
 			"std"	=> "",
 			"type"	=> "media"
@@ -82,8 +82,8 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 							
 		$of_options[] = array(
-			"name"	=> __( 'Custom Favicon', 'adapt' ),
-			"desc"	=> __( 'Upload a 16px x 16px Png/Gif image that will represent your website\'s favicon.', 'adapt' ),
+			"name"	=> __( 'Custom Favicon', 'wpex-adapt' ),
+			"desc"	=> __( 'Upload a 16px x 16px Png/Gif image that will represent your website\'s favicon.', 'wpex-adapt' ),
 			"id"	=> "custom_favicon",
 			"std"	=> "",
 			"type"	=> "media"
@@ -91,70 +91,70 @@ if ( ! function_exists( 'of_options' ) ) {
 		
 		//misc
 		$of_options[] = array( 
-			"name"	=> __( 'Responsiveness', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the responsive CSS for this theme?', 'adapt' ),
+			"name"	=> __( 'Responsiveness', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the responsive CSS for this theme?', 'wpex-adapt' ),
 			"id"	=> "responsive",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 		
 		$of_options[] = array( 
-			"name"	=> __( 'Retina Support', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the built-in retina support? If using a caching system such as W3Total Cache or hosted on WPEngine, it is best to disable. When enabled this will create a second version of every cropped image that is 2x as large and save it on your server.', 'adapt' ),
+			"name"	=> __( 'Retina Support', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the built-in retina support? If using a caching system such as W3Total Cache or hosted on WPEngine, it is best to disable. When enabled this will create a second version of every cropped image that is 2x as large and save it on your server.', 'wpex-adapt' ),
 			"id"	=> "builtin_retina",
 			"std"	=> '0',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 
 		// POST TYPES
 		$of_options[] = array(
-			"name"	=> __( 'Post Types', 'adapt' ),
+			"name"	=> __( 'Post Types', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 					
 		$of_options[] = array(
-			"name"	=> __( 'Enable Slides Post Type', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the built-in Slider post type? Refresh your page after saving to see your changes.', 'adapt' ),
+			"name"	=> __( 'Enable Slides Post Type', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the built-in Slider post type? Refresh your page after saving to see your changes.', 'wpex-adapt' ),
 			"id"	=> "slides_post_type",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 		
 		$of_options[] = array(
-			"name"	=> __( 'Enable Highlights Post Type', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the built-in Highlights post type? Refresh your page after saving to see your changes.', 'adapt' ),
+			"name"	=> __( 'Enable Highlights Post Type', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the built-in Highlights post type? Refresh your page after saving to see your changes.', 'wpex-adapt' ),
 			"id"	=> "highlights_post_type",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 		
 		$of_options[] = array(
-			"name"	=> __( 'Enable Portfolio Post Type', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the built-in Portfolio post type? Refresh your page after saving to see your changes.', 'adapt' ),
+			"name"	=> __( 'Enable Portfolio Post Type', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the built-in Portfolio post type? Refresh your page after saving to see your changes.', 'wpex-adapt' ),
 			"id"	=> "portfolio_post_type",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 
 		// HOME SETTINGS	
 		$of_options[] = array(
-			"name"	=> __( 'Home', 'adapt' ),
+			"name"	=> __( 'Home', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 									
 		$of_options[] = array(
-			"name"	=> __( 'Homepage Layout Manager', 'adapt' ),
-			"desc"	=> __( 'Organize how you want the layout to appear on the homepage.', 'adapt' ),
+			"name"	=> __( 'Homepage Layout Manager', 'wpex-adapt' ),
+			"desc"	=> __( 'Organize how you want the layout to appear on the homepage.', 'wpex-adapt' ),
 			"id"	=> "homepage_blocks",
 			"std"	=> $home_blocks,
 			"type"	=> "sorter"
@@ -165,24 +165,24 @@ if ( ! function_exists( 'of_options' ) ) {
 			"name"	=> "",
 			"desc"	=> "",
 			"id"	=> "subheading",
-			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Highlights', 'adapt' ) ."</h3>",
+			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Highlights', 'wpex-adapt' ) ."</h3>",
 			"icon"	=> true,
 			"type"	=> "info"
 		);
 						
 		$of_options[] = array( 
-			"name"	=> __( 'Highlights Heading', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the highlights section heading?', 'adapt' ),
+			"name"	=> __( 'Highlights Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the highlights section heading?', 'wpex-adapt' ),
 			"id"	=> "home_highlights_heading",
 			"std"	=> '0',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 		
 		$of_options[] = array( 
-			"name"	=> __( 'Highlights Custom Heading', 'adapt' ),
-			"desc"	=> __( 'Custom heading text for the homepage highlights section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'adapt' ),
+			"name"	=> __( 'Highlights Custom Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Custom heading text for the homepage highlights section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'wpex-adapt' ),
 			"id"	=> "home_highlights_heading_txt",
 			"std"	=> '',
 			"fold"	=> 'home_highlights_heading',
@@ -194,24 +194,24 @@ if ( ! function_exists( 'of_options' ) ) {
 			"name"	=> "",
 			"desc"	=> "",
 			"id"	=> "subheading",
-			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Portfolio', 'adapt' ) ."</h3>",
+			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Portfolio', 'wpex-adapt' ) ."</h3>",
 			"icon"	=> true,
 			"type"	=> "info"
 		);
 						
 		$of_options[] = array( 
-			"name"	=> __( 'Portfolio Heading', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the portfolio section heading?', 'adapt' ),
+			"name"	=> __( 'Portfolio Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the portfolio section heading?', 'wpex-adapt' ),
 			"id"	=> "home_port_heading",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		); 
 		
 		$of_options[] = array( 
-			"name"	=> __( 'Portfolio Custom Heading', 'adapt' ),
-			"desc"	=> __( 'Custom heading text for the homepage portfolio section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'adapt' ),
+			"name"	=> __( 'Portfolio Custom Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Custom heading text for the homepage portfolio section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'wpex-adapt' ),
 			"id"	=> "home_port_heading_txt",
 			"std"	=> '',
 			"fold"	=> 'home_port_heading',
@@ -219,16 +219,16 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 										
 		$of_options[] = array(
-			"name"	=> __( 'Portfolio Count', 'adapt' ),
-			"desc"	=> __( 'How many portfolio posts do you wish to show for the portfolio section?', 'adapt' ),
+			"name"	=> __( 'Portfolio Count', 'wpex-adapt' ),
+			"desc"	=> __( 'How many portfolio posts do you wish to show for the portfolio section?', 'wpex-adapt' ),
 			"id"	=> "home_port_count",
 			"std"	=> "4",
 			"type"	=> "text"
 		);
 						
 		$of_options[] = array(
-			"name"		=> __( 'Portfolio Category', 'adapt' ),
-			"desc"		=> __( 'Select a category for your homepage recent blog items.', 'adapt' ),
+			"name"		=> __( 'Portfolio Category', 'wpex-adapt' ),
+			"desc"		=> __( 'Select a category for your homepage recent blog items.', 'wpex-adapt' ),
 			"id"		=> "home_port_cat",
 			"std"		=> '',
 			"type"		=> "select",
@@ -241,24 +241,24 @@ if ( ! function_exists( 'of_options' ) ) {
 			"name"	=> "",
 			"desc"	=> "",
 			"id"	=> "subheading",
-			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Blog', 'adapt' ) ."</h3>",
+			"std"	=> "<h3 style=\"margin: 0;\">". __( 'Blog', 'wpex-adapt' ) ."</h3>",
 			"icon"	=> true,
 			"type"	=> "info"
 		);
 						
 		$of_options[] = array( 
-			"name"	=> __( 'Blog Heading', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the blog section heading?', 'adapt' ),
+			"name"	=> __( 'Blog Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the blog section heading?', 'wpex-adapt' ),
 			"id"	=> "home_blog_heading",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		); 
 		
 		$of_options[] = array( 
-			"name"	=> __( 'Blog Intro Custom Heading', 'adapt' ),
-			"desc"	=> __( 'Custom heading text for the homepage blog section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'adapt' ),
+			"name"	=> __( 'Blog Intro Custom Heading', 'wpex-adapt' ),
+			"desc"	=> __( 'Custom heading text for the homepage blog section.<br /><br /><strong>Note:</strong> Leave blank to show the translatable/localized default string.', 'wpex-adapt' ),
 			"id"	=> "home_blog_heading_txt",
 			"std"	=> '',
 			"fold"	=> 'home_blog_heading',
@@ -267,16 +267,16 @@ if ( ! function_exists( 'of_options' ) ) {
 						
 										
 		$of_options[] = array(
-			"name"	=> __( 'Blog Count', 'adapt' ),
-			"desc"	=> __( 'How many blog posts do you wish to show for the blog section?', 'adapt' ),
+			"name"	=> __( 'Blog Count', 'wpex-adapt' ),
+			"desc"	=> __( 'How many blog posts do you wish to show for the blog section?', 'wpex-adapt' ),
 			"id"	=> "home_blog_count",
 			"std"	=> "4",
 			"type"	=> "text"
 		);
 						
 		$of_options[] = array(
-			"name"		=> __( 'Blog Category', 'adapt' ),
-			"desc"		=> __( 'Select a category for your homepage recent blog items.', 'adapt' ),
+			"name"		=> __( 'Blog Category', 'wpex-adapt' ),
+			"desc"		=> __( 'Select a category for your homepage recent blog items.', 'wpex-adapt' ),
 			"id"		=> "home_blog_cat",
 			"std"		=> '',
 			"type"		=> "select",
@@ -285,21 +285,21 @@ if ( ! function_exists( 'of_options' ) ) {
 			
 		// SLIDER SETTINGS	
 		$of_options[] = array(
-			"name"	=> __( 'Slider', 'adapt' ),
+			"name"	=> __( 'Slider', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 					
 		$of_options[] = array(
-			"name"	=>  __( 'Slider Height', 'adapt' ),
-			"desc"	=>  __( 'Select a custom height for the slider in px. If left blank the theme will not crop any images vertically so you can have different height slides.', 'adapt' ),
+			"name"	=>  __( 'Slider Height', 'wpex-adapt' ),
+			"desc"	=>  __( 'Select a custom height for the slider in px. If left blank the theme will not crop any images vertically so you can have different height slides.', 'wpex-adapt' ),
 			"id"	=> "slider_height",
 			"std"	=> "400",
 			"type"	=> "text"
 		);	
 
 		$of_options[] = array(
-			"name"		=>  __( 'Animation', 'adapt' ),
-			"desc"		=>  __( 'Select your desired slider animation.', 'adapt' ),
+			"name"		=>  __( 'Animation', 'wpex-adapt' ),
+			"desc"		=>  __( 'Select your desired slider animation.', 'wpex-adapt' ),
 			"id"		=> "slider_animation",
 			"std"		=> "fade",
 			"type"		=> "select",
@@ -310,8 +310,8 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 						
 		$of_options[] = array(
-			"name"		=>  __( 'Animation Direction', 'adapt' ),
-			"desc"		=>  __( 'Select your desired direction for the slider animation.<br /><br /><strong>Note:</strong> If you choose vertical slides, all slides must be the same height to prevent issues.', 'adapt' ),
+			"name"		=>  __( 'Animation Direction', 'wpex-adapt' ),
+			"desc"		=>  __( 'Select your desired direction for the slider animation.<br /><br /><strong>Note:</strong> If you choose vertical slides, all slides must be the same height to prevent issues.', 'wpex-adapt' ),
 			"id"		=> "slider_direction",
 			"std"		=> "horizontal",
 			"type"		=> "select",
@@ -322,28 +322,28 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 						
 		$of_options[] = array(
-			"name"	=> __( 'Auto Slideshow', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable the automatic slideshow', 'adapt' ),
+			"name"	=> __( 'Auto Slideshow', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable the automatic slideshow', 'wpex-adapt' ),
 			"id"	=> "slider_slideshow",
 			"std"	=> '1',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 						
 		$of_options[] = array(
-			"name"	=> __( 'Randomize Slideshow', 'adapt' ),
-			"desc"	=> __( 'Do you wish to enable or disable random slide order.', 'adapt' ),
+			"name"	=> __( 'Randomize Slideshow', 'wpex-adapt' ),
+			"desc"	=> __( 'Do you wish to enable or disable random slide order.', 'wpex-adapt' ),
 			"id"	=> "slider_randomize",
 			"std"	=> '0',
-			"on"	=> __( 'Enable', 'adapt' ),
-			"off"	=> __( 'Disable', 'adapt' ),
+			"on"	=> __( 'Enable', 'wpex-adapt' ),
+			"off"	=> __( 'Disable', 'wpex-adapt' ),
 			"type"	=> "switch"
 		);
 						
 		$of_options[] = array(
-			"name"	=> __( 'Slideshow Speed', 'adapt' ),
-			"desc"	=> __( 'Adjust the slideshow speed of your homepage slider. Time in milliseconds', 'adapt' ),
+			"name"	=> __( 'Slideshow Speed', 'wpex-adapt' ),
+			"desc"	=> __( 'Adjust the slideshow speed of your homepage slider. Time in milliseconds', 'wpex-adapt' ),
 			"id"	=> "slider_slideshow_speed",
 			"std"	=> "7000",
 			"min"	=> "2000",
@@ -353,8 +353,8 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 					
 		$of_options[] = array(
-			"name"	=>  __( 'Slider Alternate', 'adapt' ),
-			"desc"	=>  __( 'Use this field to insert a shortcode or other HTML to replace the default flexslider', 'adapt' ),
+			"name"	=>  __( 'Slider Alternate', 'wpex-adapt' ),
+			"desc"	=>  __( 'Use this field to insert a shortcode or other HTML to replace the default flexslider', 'wpex-adapt' ),
 			"id"	=> "slider_alternative",
 			"std"	=> "",
 			"type"	=> "textarea",
@@ -363,45 +363,45 @@ if ( ! function_exists( 'of_options' ) ) {
 			
 		// PORTFOLIO SETTINGS	
 		$of_options[] = array(
-			"name"	=> __( 'Portfolio', 'adapt' ),
+			"name"	=> __( 'Portfolio', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 			
 		$of_options[] = array(
-				'name'	=> __( 'Custom Portfolio Labels', 'adapt' ),
-				'desc'	=> __( 'Easily change the name of your post type here to say something else.<br /><br /><strong>IMPORTANT</strong>: Refresh your page to see the change live in your dashboard.', 'adapt' ),
+				'name'	=> __( 'Custom Portfolio Labels', 'wpex-adapt' ),
+				'desc'	=> __( 'Easily change the name of your post type here to say something else.<br /><br /><strong>IMPORTANT</strong>: Refresh your page to see the change live in your dashboard.', 'wpex-adapt' ),
 				'id'	=> 'portfolio_labels',
 				"std"	=> 'Portfolio',
 				'type'	=> 'text'
 			);
 				
 		$of_options[] = array(
-			'name'	=> __( 'Custom Portfolio Slug', 'adapt' ),
-			'desc'	=> __( 'Easily change the slug of your post type here to say something else. If you are using a page with the slug "portfolio" and want to use pagination do not set this value to "portfolio" or your pagination will break.<br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'adapt' ),
+			'name'	=> __( 'Custom Portfolio Slug', 'wpex-adapt' ),
+			'desc'	=> __( 'Easily change the slug of your post type here to say something else. If you are using a page with the slug "portfolio" and want to use pagination do not set this value to "portfolio" or your pagination will break.<br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'wpex-adapt' ),
 			'id'	=> 'portfolio_slug',
 			"std"	=> 'portfolio-item',
 			'type'	=> 'text'
 		);
 				
 		$of_options[] = array(
-			'name'	=> __( 'Custom Portfolio Category Slug', 'adapt' ),
-			'desc'	=> __( 'Easily change the slug of your category taxonomy here to say something else. <br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'adapt' ),
+			'name'	=> __( 'Custom Portfolio Category Slug', 'wpex-adapt' ),
+			'desc'	=> __( 'Easily change the slug of your category taxonomy here to say something else. <br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'wpex-adapt' ),
 			'id'	=> 'portfolio_cat_slug',
 			"std"	=> 'portfolio-category',
 			'type'	=> 'text'
 		);
 				
 		$of_options[] = array(
-			'name'	=> __( 'Custom Portfolio Tag Slug', 'adapt' ),
-			'desc'	=> __( 'Easily change the slug of your tag taxonomy here to say something else. <br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'adapt' ),
+			'name'	=> __( 'Custom Portfolio Tag Slug', 'wpex-adapt' ),
+			'desc'	=> __( 'Easily change the slug of your tag taxonomy here to say something else. <br /><br /><strong>IMPORTANT</strong>: You must re-save your permalinks after changing this setting.', 'wpex-adapt' ),
 			'id'	=> 'portfolio_tag_slug',
 			"std"	=> 'portfolio-tag',
 			'type'	=> 'text',
 		);
 				
 		$of_options[] = array(
-		"name"	=> __( 'Posts Per Page', 'adapt' ),
-								"desc"	=> __( 'How many posts per page to show for this post type archives.', 'adapt' ),
+		"name"	=> __( 'Posts Per Page', 'wpex-adapt' ),
+								"desc"	=> __( 'How many posts per page to show for this post type archives.', 'wpex-adapt' ),
 								"id"	=> "portfolio_pagination",
 								"std"	=> '12',
 								"type"	=> "text"
@@ -411,67 +411,67 @@ if ( ! function_exists( 'of_options' ) ) {
 			
 		// BLOG SETTINGS	
 		$of_options[] = array(
-			"name"	=> __( 'Blog', 'adapt' ),
+			"name"	=> __( 'Blog', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);	
 		
 		$of_options[] = array(
-			"name"	=> __( 'Custom Blog Title', 'adapt' ),
-			"desc"	=> __( 'Enter your custom blog title. Used for the main heading on single posts. To change your main blog page title edit the page title in your page editor.', 'adapt' ),
+			"name"	=> __( 'Custom Blog Title', 'wpex-adapt' ),
+			"desc"	=> __( 'Enter your custom blog title. Used for the main heading on single posts. To change your main blog page title edit the page title in your page editor.', 'wpex-adapt' ),
 			"id"	=> "blog_title",
 			"std"	=> '',
 			"type"	=> "text"
 		);
 			
 		$of_options[] = array(
-			'name'	=> __( 'Featured Images On Single Posts?', 'adapt' ),
-			'desc'	=> __( 'Display featured images on single blog posts?', 'adapt' ),
+			'name'	=> __( 'Featured Images On Single Posts?', 'wpex-adapt' ),
+			'desc'	=> __( 'Display featured images on single blog posts?', 'wpex-adapt' ),
 			'id'	=> 'blog_single_thumbnail',
 			"std"	=> '1',
-				"on"	=> __( 'Enable', 'adapt' ),
-				"off"	=> __( 'Disable', 'adapt' ),
+				"on"	=> __( 'Enable', 'wpex-adapt' ),
+				"off"	=> __( 'Disable', 'wpex-adapt' ),
 				"type"	=> "switch"
 			); 
 			
 		$of_options[] = array(
-			'name'	=> __( 'Entry Excerpts', 'adapt' ),
-			'desc'	=> __( 'Display excerpts on your standard post entries instead of the full posts?', 'adapt' ),
+			'name'	=> __( 'Entry Excerpts', 'wpex-adapt' ),
+			'desc'	=> __( 'Display excerpts on your standard post entries instead of the full posts?', 'wpex-adapt' ),
 			'id'	=> 'blog_exceprt',
 			"std"	=> '1',
-				"on"	=> __( 'Enable', 'adapt' ),
-				"off"	=> __( 'Disable', 'adapt' ),
+				"on"	=> __( 'Enable', 'wpex-adapt' ),
+				"off"	=> __( 'Disable', 'wpex-adapt' ),
 				"type"	=> "switch"
 			); 
 				
 		$of_options[] = array(
-			'name'	=> __( 'Display Tags', 'adapt' ),
-			'desc'	=> __( 'Display current post tags at the bottom of standard posts?', 'adapt' ),
+			'name'	=> __( 'Display Tags', 'wpex-adapt' ),
+			'desc'	=> __( 'Display current post tags at the bottom of standard posts?', 'wpex-adapt' ),
 			'id'	=> 'blog_tags',
 			"std"	=> '1',
-				"on"	=> __( 'Enable', 'adapt' ),
-				"off"	=> __( 'Disable', 'adapt' ),
+				"on"	=> __( 'Enable', 'wpex-adapt' ),
+				"off"	=> __( 'Disable', 'wpex-adapt' ),
 				"type"	=> "switch"
 		);		
 
 		// FOOTER SETTINGS	
 		$of_options[] = array(
-			"name"	=> __( 'Footer', 'adapt' ),
+			"name"	=> __( 'Footer', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 		
 		$of_options[] = array(
-			'name'	=> __( 'Widgetized Footer', 'adapt' ),
-			'desc'	=> __( 'Display widgetized Footer?', 'adapt' ),
+			'name'	=> __( 'Widgetized Footer', 'wpex-adapt' ),
+			'desc'	=> __( 'Display widgetized Footer?', 'wpex-adapt' ),
 			'id'	=> 'widgetized_footer',
 			"std"	=> '1',
-				"on"	=> __( 'Enable', 'adapt' ),
-				"off"	=> __( 'Disable', 'adapt' ),
+				"on"	=> __( 'Enable', 'wpex-adapt' ),
+				"off"	=> __( 'Disable', 'wpex-adapt' ),
 				"type"	=> "switch"
 		);
 						
 		$of_options[] = array(
-			"name"	=> __( 'Copyright Text', 'adapt' ),
-			"desc"	=> __( 'You can use the following shortcodes in your footer text: [site-title] [site-link] [the-year]', 'adapt' ),
+			"name"	=> __( 'Copyright Text', 'wpex-adapt' ),
+			"desc"	=> __( 'You can use the following shortcodes in your footer text: [site-title] [site-link] [the-year]', 'wpex-adapt' ),
 			"id"	=> "footer_text",
 			"std"	=> "",
 			"type"	=> "textarea",
@@ -479,7 +479,7 @@ if ( ! function_exists( 'of_options' ) ) {
 
 		// IMG SIZES
 		$of_options[] = array(
-			"name"	=> __( 'Image Cropping', 'adapt' ),
+			"name"	=> __( 'Image Cropping', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 
@@ -523,7 +523,7 @@ if ( ! function_exists( 'of_options' ) ) {
 
 			// Width
 			$width = array(
-				"name" => __( 'Width', 'adapt' ),
+				"name" => __( 'Width', 'wpex-adapt' ),
 				"id"   => $key .'_img_width',
 				"std"  => '',
 				"type" => "text",
@@ -535,7 +535,7 @@ if ( ! function_exists( 'of_options' ) ) {
 
 			// Height
 			$height = array(
-				"name" => __( 'Height', 'adapt' ),
+				"name" => __( 'Height', 'wpex-adapt' ),
 				"id"   => $key .'_img_height',
 				"std"  => '',
 				"type" => "text",
@@ -547,7 +547,7 @@ if ( ! function_exists( 'of_options' ) ) {
 
 			// Crop
 			$crop = array(
-				"name"    => __( 'Crop', 'adapt' ),
+				"name"    => __( 'Crop', 'wpex-adapt' ),
 				"id"      => $key .'_img_crop',
 				"std"     => '',
 				"type"    => "select",
@@ -563,13 +563,13 @@ if ( ! function_exists( 'of_options' ) ) {
 		
 		// TRACKING	
 		$of_options[] = array(
-			"name"	=> __( 'Tracking', 'adapt' ),
+			"name"	=> __( 'Tracking', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 		
 		$of_options[] = array(
-			"name"	=>	__( 'Tracking Code', 'adapt' ),
-			"desc"	=>	__( 'Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.', 'adapt' ),
+			"name"	=>	__( 'Tracking Code', 'wpex-adapt' ),
+			"desc"	=>	__( 'Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.', 'wpex-adapt' ),
 			"id"	=>	"google_analytics",
 			"std"	=>	"",
 			"type"	=>	"textarea"
@@ -577,24 +577,24 @@ if ( ! function_exists( 'of_options' ) ) {
 					
 		// BACKUP
 		$of_options[] = array(
-			"name"	=> __( 'Backup', 'adapt' ),
+			"name"	=> __( 'Backup', 'wpex-adapt' ),
 			"type"	=> "heading"
 		);
 					
 		$of_options[] = array(
-			"name"	=> __( 'Backup and Restore Options', 'adapt' ),
+			"name"	=> __( 'Backup and Restore Options', 'wpex-adapt' ),
 			"id"	=> "of_backup",
 			"std"	=> "",
 			"type"	=> "backup",
-			"desc"	=> __( 'You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back.', 'adapt' ),
+			"desc"	=> __( 'You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back.', 'wpex-adapt' ),
 		);
 						
 		$of_options[] = array(
-			"name"	=> __( 'Transfer Theme Options Data', 'adapt' ),
+			"name"	=> __( 'Transfer Theme Options Data', 'wpex-adapt' ),
 			"id"	=> "of_transfer",
 			"std"	=> "",
 			"type"	=> "transfer",
-			"desc"	=> __( 'You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Options".', 'adapt' ),
+			"desc"	=> __( 'You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Options".', 'wpex-adapt' ),
 		);
 				
 	}

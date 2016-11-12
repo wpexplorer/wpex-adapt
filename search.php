@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<header id="page-heading">
 		<h1 id="archive-title">
-			<?php _e( 'Search Results For', 'adapt' ); ?>: <?php the_search_query(); ?>
+			<?php _e( 'Search Results For', 'wpex-adapt' ); ?>: <?php the_search_query(); ?>
 		</h1>
 	</header><!-- #page-heading -->
 
@@ -26,7 +26,7 @@ get_header(); ?>
 	
 	<?php else : ?>
 
-		<?php _e( 'No results found for that query.', 'adapt' ); ?>
+		<?php _e( 'No results found for that query.', 'wpex-adapt' ); ?>
 
 	<?php endif; ?>
 

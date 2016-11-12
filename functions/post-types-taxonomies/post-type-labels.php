@@ -23,15 +23,15 @@ if ( ! function_exists( 'wpex_custom_portfolio_args' ) ) {
 		
 		$labels = array(
 			'name' => $post_type_name,
-			'singular_name' => $post_type_name . __( 'Item', 'adapt' ),
-			'add_new' => __( 'Add New Item', 'adapt' ),
-			'add_new_item' => __( 'Add New','adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'adapt' ),
-			'edit_item' => __( 'Edit New','adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'adapt' ),
-			'new_item' => __( 'Add New','adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'adapt' ),
-			'view_item' => __( 'View Item', 'adapt' ),
-			'search_items' => __( 'Search', 'adapt' ). $post_type_name,
-			'not_found' =>  __( 'No','adapt') . ' ' . $post_type_name . ' ' . __( 'items found', 'adapt' ),
-			'not_found_in_trash' => __( 'No','adapt') . ' ' . $post_type_name . ' ' . __( 'items found in the trash', 'adapt' ),
+			'singular_name' => $post_type_name . __( 'Item', 'wpex-adapt' ),
+			'add_new' => __( 'Add New Item', 'wpex-adapt' ),
+			'add_new_item' => __( 'Add New','wpex-adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'wpex-adapt' ),
+			'edit_item' => __( 'Edit New','wpex-adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'wpex-adapt' ),
+			'new_item' => __( 'Add New','wpex-adapt') . ' ' . $post_type_name . ' ' . __( 'Item', 'wpex-adapt' ),
+			'view_item' => __( 'View Item', 'wpex-adapt' ),
+			'search_items' => __( 'Search', 'wpex-adapt' ). $post_type_name,
+			'not_found' =>  __( 'No','wpex-adapt') . ' ' . $post_type_name . ' ' . __( 'items found', 'wpex-adapt' ),
+			'not_found_in_trash' => __( 'No','wpex-adapt') . ' ' . $post_type_name . ' ' . __( 'items found in the trash', 'wpex-adapt' ),
 		);
 		
 		$custom_args = array(
