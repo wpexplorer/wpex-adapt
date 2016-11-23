@@ -58,26 +58,18 @@ if ( ! function_exists( 'of_options' ) ) {
 		);
 		
 		$of_options[] = array(
-			"name"	=> __("Retina Logo (optional)", "adapt"),
-			"desc"	=> __("Upload your custom retina ready logo. This should be 2x the size of your standard logo.", "adapt"),
+			"name"	=> __( "Retina Logo (optional)", "adapt" ),
+			"desc"	=> __( "Upload your custom retina ready logo. This should be 2x the size of your standard logo.", "adapt" ),
 			"std"	=> "",
 			"id"	=> "custom_retina_logo",
 			"type"	=> "media",
 		);
 		
 		$of_options[] = array(
-			"name"	=> __("Standard Logo Height", "adapt"),
-			"desc"	=> __("Enter your standard logo height in pixels. Used for retina purposes. Should be 1/2 the height of your retina logo dimensions and do not include the px. Example: 150", "adapt"),
+			"name"	=> __( "Standard Logo Height", "adapt" ),
+			"desc"	=> __( "Enter your standard logo height in pixels. Used for retina purposes. Should be 1/2 the height of your retina logo dimensions and do not include the px. Example: 150", "adapt" ),
 			"std"	=> "",
 			"id"	=> "logo_height",
-			"type"	=> "text",
-		);
-			
-		$of_options[] = array(
-			"name"	=> __("Standard Logo Width", "adapt"),
-			"desc"	=> __("Enter your standard logo width in pixels. Used for retina purposes. Should be 1/2 the width of your retina logo dimensions and do not include the px. Example: 80", "adapt"),
-			"std"	=> "",
-			"id"	=> "logo_width",
 			"type"	=> "text",
 		);
 							

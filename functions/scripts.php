@@ -4,7 +4,7 @@
  *
  * @package Adapt WordPress Theme
  * @subpackage Functions
- * @version 3.0.0
+ * @version 3.1.1
  */
 
 /**
@@ -18,7 +18,7 @@ function wpex_load_scripts() {
 	wp_enqueue_style( 'wpex-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'prettyPhoto', WPEX_CSS_DIR . '/prettyPhoto.css', array(), '3.1.6' );
 	wp_enqueue_style( 'font-awesome', WPEX_CSS_DIR . '/font-awesome.min.css', array(), '4.5.0' );
-	wp_enqueue_style( 'google-font-droid-serif', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
+	wp_enqueue_style( 'google-font-droid-serif', '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
 	if ( wpex_get_data( 'responsive', '1' ) == '1' ) {
 		wp_enqueue_style( 'responsive', WPEX_CSS_DIR . '/responsive.css', array( 'wpex-style' ) );
 	}
@@ -30,9 +30,12 @@ function wpex_load_scripts() {
 	wp_enqueue_script( 'superfish', WPEX_JS_DIR. '/superfish.js', array( 'jquery', 'hoverIntent' ), '1.7.9', true );
 	wp_enqueue_script( 'fitvids', WPEX_JS_DIR. '/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 	wp_enqueue_script( 'prettyPhoto', WPEX_JS_DIR. '/jquery.prettyPhoto.js', array( 'jquery' ), '3.1.6', true );
+
+	wp_enqueue_script( 'html5shiv', WPEX_JS_DIR .'/html5.js', array(), false, false );
+	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 	
-	$deps = array( 'jquery', 'slicknav', 'hoverIntent', 'superfish', 'fitvids', 'prettyPhoto' );
-	wp_enqueue_script( 'wpex-global', WPEX_JS_DIR . '/global.js', $deps, '3.0.0', true );
+	wp_enqueue_script( 'wpex-global', WPEX_JS_DIR . '/global.js', array( 'jquery', 'slicknav', 'hoverIntent', 'superfish', 'fitvids', 'prettyPhoto' ), '3.0.0', true );
+
 	wp_localize_script( 'wpex-global', 'wpexLocalize', array(
 		'mobileMenuText' => wpex_get_data( 'responsive_menu_text', __( 'Menu', 'wpex-adapt' )
 	) ) );
@@ -51,45 +54,24 @@ function wpex_load_scripts() {
 add_action( 'wp_enqueue_scripts', 'wpex_load_scripts' );
 
 /**
- * Browser specific CSS
- *
- * @since 1.0.0
- */
-if ( ! function_exists( 'wpex_browser_dependencies' ) ) {
-	function wpex_browser_dependencies() {
-		echo '<!--[if lt IE 9]>';
-			echo '<link rel="stylesheet" type="text/css" href="'. WPEX_CSS_DIR .'/ancient-ie.css" />';
-			echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
-		echo '<![endif]-->';
-	}
-}
-add_action( 'wp_head', 'wpex_browser_dependencies' );
-
-/**
  * Retina logo output
  *
  * @since 1.0.0
  */
 if ( ! function_exists( 'wpex_retina_logo' ) ) {
 	function wpex_retina_logo() {
+
+		$logo_url    = wpex_get_data( 'custom_retina_logo' );
+		$logo_height = wpex_get_data( 'logo_width' );
 		
-		if ( wpex_get_data( 'custom_retina_logo' )
-			&& wpex_get_data( 'logo_height' )
-			&& wpex_get_data( 'logo_width' )
-		) {
+		if ( $logo_url && $logo_height ) {
 		
-			// Get retina options from theme panel and set vars
-			$logo_url    = wpex_get_data( 'custom_retina_logo' );
-			$logo_width  = wpex_get_data( 'logo_height' );
-			$logo_height = wpex_get_data( 'logo_width' );
-					
 			$wpex_retina_logo_js = '<!-- Retina Logo -->
 			<script type="text/javascript">
 			jQuery(function($){
 				if (window.devicePixelRatio == 2) {
-					$("#masterhead #logo img").attr("src", "'. $logo_url .'");
-					$("#masterhead #logo img").attr("width", "'. $logo_width .'");
-					$("#masterhead #logo img").attr("height", "'. $logo_height .'");
+					$("#masterhead #logo img").attr("src", "'. esc_url( $logo_url ) .'");
+					$("#masterhead #logo img").css("height", "'. intval( $logo_height ) .'");
 				 }
 			});
 			</script>';	
