@@ -49,14 +49,13 @@ class WPEX_Welcome {
 	 * @return void
 	 */
 	public function admin_menus() {
-		
-		add_menu_page(
+		add_submenu_page(
+			'themes.php',
 			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-adapt' ),
 			$this->theme_name .' '. esc_html__( 'Theme', 'wpex-adapt' ),
 			'manage_options',
 			'wpex-theme',
-			array( $this, 'recommended_screen' ),
-			'dashicons-desktop'
+			array( $this, 'recommended_screen' )
 		);
 
 	}
@@ -166,7 +165,7 @@ class WPEX_Welcome {
 				<div>
 					<h4><?php esc_html_e( 'Total Drag & Drop Theme', 'wpex-adapt' ); ?></h4>
 					<p><?php esc_html_e( 'Check out our most advanced (yet easy to use) and flexible theme to date.', 'wpex-adapt' ); ?></p>
-					<a href="http://wpexplorer-themes.com/total/" target="_blank"><img src="<?php echo esc_url( $this->dir ); ?>total.jpg" alt="Total WordPress Theme" /></a>
+					<a href="http://wpexplorer-themes.com/total/" target="_blank"><img style="width:auto;" src="<?php echo esc_url( $this->dir ); ?>total.jpg" alt="Total WordPress Theme" /></a>
 				</div>
 
 				<br />

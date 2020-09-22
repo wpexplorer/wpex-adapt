@@ -17,7 +17,7 @@
  *
  * @package Adapt WordPress Theme
  * @subpackage Functions
- * @version 3.0.1
+ * @version 3.1.2
  */
 
 // Exit if accessed directly
@@ -43,8 +43,8 @@ $template_dir     = get_template_directory();
 /*--------------------------------------*/
 /* Define Constants
 /*--------------------------------------*/
-define( 'WPEX_JS_DIR', $template_dir_uri.'/js' );
-define( 'WPEX_CSS_DIR', $template_dir_uri.'/css' );
+define( 'WPEX_JS_DIR', $template_dir_uri .'/js' );
+define( 'WPEX_CSS_DIR', $template_dir_uri .'/css' );
 
 /*--------------------------------------*/
 /* Helper functions

@@ -13,20 +13,21 @@
 
 	<?php
 	// Load isotope scripts
-	wp_enqueue_script( 'isotope', WPEX_JS_DIR . '/isotope.js', '', true );
-	wp_enqueue_script( 'isotope_init', WPEX_JS_DIR . '/isotope_init.js', '', true );  ?>
-	
+	wp_enqueue_script( 'imagesloaded' );
+	wp_enqueue_script( 'isotope', WPEX_JS_DIR . '/isotope.js', '3.0.6', true );
+	wp_enqueue_script( 'isotope_init', WPEX_JS_DIR . '/isotope_init.js', '3.1.2', true );  ?>
+
 	<header id="page-heading" class="clearfix">
 		<h1><?php the_title(); ?></h1>
 		<?php $terms = get_terms( 'portfolio_category' ); ?>
-		<?php if( $terms[0] ) { ?>
+		<?php if ( $terms && ! is_wp_error( $terms ) ) { ?>
 			<ul id="portfolio-cats" class="filter clearfix">
 				<li><a href="#" class="active" data-filter="*"><span><?php _e('All', 'wpex-adapt'); ?></span></a></li>
 				<?php foreach ($terms as $term ) : ?>
 					<li><a href="#" data-filter=".<?php echo $term->slug; ?>"><span><?php echo $term->name; ?></span></a></li>
 				<?php endforeach; ?>
 			</ul><!-- /portfolio-cats -->
-		<?php } ?>	 
+		<?php } ?>
 	</header><!-- /page-heading -->
 
 	<div class="post full-width clearfix">
