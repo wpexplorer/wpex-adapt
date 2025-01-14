@@ -41,7 +41,7 @@ define( 'WPEX_CSS_DIR', $template_dir_uri .'/css' );
 require_once( $template_dir .'/functions/helpers.php' );
 
 /*--------------------------------------*/
-/* Setup & Updates
+/* Setup
 /*--------------------------------------*/
 require_once( $template_dir .'/functions/theme-setup.php' );
 require_once( $template_dir .'/functions/image-sizes.php' );
