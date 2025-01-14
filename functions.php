@@ -25,17 +25,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Theme info
-function wpex_get_theme_info() {
-	return array(
-		'name'        => 'Adapt',
-		'dir'         => get_template_directory_uri() .'/functions/',
-		'url'         => 'http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme/',
-		'changelog'   => 'https://wpexplorer-updates.com/changelog/adapt-wordpress-theme/',
-		'github_repo' => 'https://github.com/wpexplorer/wpex-adapt',
-	);
-}
-
 // Get template dirs
 $template_dir_uri = get_template_directory_uri();
 $template_dir     = get_template_directory();
@@ -54,7 +43,6 @@ require_once( $template_dir .'/functions/helpers.php' );
 /*--------------------------------------*/
 /* Setup & Updates
 /*--------------------------------------*/
-require_once( $template_dir .'/functions/updates.php' );
 require_once( $template_dir .'/functions/theme-setup.php' );
 require_once( $template_dir .'/functions/image-sizes.php' );
 
@@ -92,12 +80,6 @@ require_once( $template_dir .'/functions/post-types-taxonomies/post-type-labels.
 
 if ( is_admin() ) {
 	require_once( $template_dir .'/functions/meta/usage.php' );
-	if ( ! defined( 'WPEX_DISABLE_THEME_ABOUT_PAGE' ) ) {
-		require_once( $template_dir .'/functions/about.php' );
-	}
-	if ( ! defined( 'WPEX_DISABLE_THEME_DASHBOARD_FEEDS' ) ) {
-		require_once( $template_dir .'/functions/dashboard-feed.php' );
-	}
 } else {
 	require_once( $template_dir .'/functions/scripts.php' );
 	require_once( $template_dir .'/functions/excerpts.php' );
@@ -123,11 +105,3 @@ class WPEX_Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		Walker_Nav_Menu::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
 	}
 }
-
-// Meta generator
-function wpex_meta_generator() {
-	$theme = wp_get_theme( 'wpex-adapt' );
-	echo '<meta name="generator" content="Powered by the Adapt Free WordPress Theme v'. $theme->get( 'Version' ) .' by WPExplorer.com" />';
-	echo "\r\n";
-}
-add_action( 'wp_head', 'wpex_meta_generator', 9999 );
