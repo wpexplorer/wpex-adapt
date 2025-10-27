@@ -48,38 +48,8 @@ require_once $template_dir . '/functions/shortcodes.php';
 require_once $template_dir . '/functions/widget-areas.php';
 require_once $template_dir . '/functions/gallery-metabox/gallery-metabox.php';
 
-<<<<<<< HEAD
 if ( wp_validate_boolean( wpex_get_data( 'portfolio_post_type' , '1' ) ) ) {
 	require_once $template_dir . '/functions/post-types-taxonomies/register-portfolio.php';
-=======
-/*--------------------------------------*/
-/* Setup
-/*--------------------------------------*/
-require_once( $template_dir .'/functions/theme-setup.php' );
-require_once( $template_dir .'/functions/image-sizes.php' );
-
-/*--------------------------------------*/
-/* Admin Panel
-/*--------------------------------------*/
-require_once( $template_dir .'/admin/index.php' );
-require_once( $template_dir .'/functions/admin-options.php' );
-
-/*--------------------------------------*/
-/* Customizer
-/*--------------------------------------*/
-require_once( $template_dir .'/functions/customizer/styling.php' );
-
-/*--------------------------------------*/
-/* Include functions
-/*--------------------------------------*/
-require_once( $template_dir .'/functions/shortcodes.php' );
-require_once( $template_dir .'/functions/widget-areas.php' );
-require_once( $template_dir .'/functions/gallery-metabox/gallery-metabox.php' );
-
-if ( wpex_get_data( 'portfolio_post_type' , '1' ) == '1' ) {
-	require_once( $template_dir .'/functions/post-types-taxonomies/register-portfolio.php' );
-	require_once( $template_dir .'/functions/helpers.php' );
->>>>>>> 05ecd2426cbe2e8844e3d11e1b6bcf641bf93bdc
 }
 if (  wp_validate_boolean( wpex_get_data( 'highlights_post_type' , '1' ) ) ) {
 	require_once $template_dir . '/functions/post-types-taxonomies/register-highlights.php';
@@ -92,11 +62,8 @@ require_once $template_dir . '/functions/post-types-taxonomies/taxonomies-labels
 require_once $template_dir . '/functions/post-types-taxonomies/post-type-labels.php';
 
 if ( is_admin() ) {
-<<<<<<< HEAD
 	require_once $template_dir . '/functions/meta/usage.php';
-=======
 	require_once( $template_dir .'/functions/meta/usage.php' );
->>>>>>> 05ecd2426cbe2e8844e3d11e1b6bcf641bf93bdc
 } else {
 	require_once $template_dir . '/functions/scripts.php';
 	require_once $template_dir . '/functions/excerpts.php';
