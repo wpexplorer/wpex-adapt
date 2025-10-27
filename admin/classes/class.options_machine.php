@@ -29,12 +29,6 @@ class Options_Machine {
 	 * Sanitize option
 	 *
 	 * Sanitize & returns default values if don't exist
-	 * 
-	 * Notes:
-	 	- For further uses, you can check for the $value['type'] and performs
-	 	  more speficic sanitization on the option
-	 	- The ultimate objective of this function is to prevent the "undefined index"
-	 	  errors some authors are having due to malformed options array
 	 */
 	static function sanitize_option( $value ) {
 		$defaults = array(
