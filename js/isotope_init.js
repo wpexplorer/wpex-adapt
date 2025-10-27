@@ -1,11 +1,8 @@
 jQuery(function($){
 	$(window).load(function() {
-
 			/*main function*/
 			var $container = $('.portfolio-content');
-
 			if ( $container.length ) {
-
 				if ( 'undefined' !== typeof $.fn.imagesLoaded ) {
 					$container.imagesLoaded( function() {
 						$container.isotope({
@@ -13,7 +10,6 @@ jQuery(function($){
 						});
 					});
 				}
-
 				/*filter*/
 				$('.filter a').click(function(){
 					var selector = $(this).attr('data-filter');
@@ -22,9 +18,6 @@ jQuery(function($){
 					$(this).addClass('active');
 					return false;
 				});
-
 			}
-
 	});
-
 });

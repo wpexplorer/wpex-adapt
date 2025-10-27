@@ -7,6 +7,7 @@
  * @since       1.0.0
  * @author      Syamil MJ
  */
+#[\AllowDynamicProperties]
 class Options_Machine {
 
 	/**

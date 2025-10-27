@@ -14,8 +14,8 @@
 	<?php
 	// Load isotope scripts
 	wp_enqueue_script( 'imagesloaded' );
-	wp_enqueue_script( 'isotope', WPEX_JS_DIR . '/isotope.js', '3.0.6', true );
-	wp_enqueue_script( 'isotope_init', WPEX_JS_DIR . '/isotope_init.js', '3.1.2', true );  ?>
+	wp_enqueue_script( 'isotope', WPEX_JS_DIR . '/isotope.js', [ 'jquery' ], '3.0.6', true );
+	wp_enqueue_script( 'isotope_init', WPEX_JS_DIR . '/isotope_init.js', [ 'jquery', 'isotope', 'imagesloaded' ], '3.2', true );  ?>
 
 	<header id="page-heading" class="clearfix">
 		<h1><?php the_title(); ?></h1>

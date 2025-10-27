@@ -4,7 +4,7 @@
  *
  * @package Adapt WordPress Theme
  * @subpackage Functions
- * @version 3.1.1
+ * @version 3.2
  */
 
 /**
@@ -13,13 +13,15 @@
  * @since 1.0.0
  */
 function wpex_load_scripts() {
+	$theme_version = '3.2';
 	
 	// CSS
 	wp_enqueue_style( 'wpex-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'prettyPhoto', WPEX_CSS_DIR . '/prettyPhoto.css', array(), '3.1.6' );
 	wp_enqueue_style( 'font-awesome', WPEX_CSS_DIR . '/font-awesome.min.css', array(), '4.5.0' );
 	wp_enqueue_style( 'google-font-droid-serif', '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' );
-	if ( wpex_get_data( 'responsive', '1' ) == '1' ) {
+	
+	if ( wp_validate_boolean( wpex_get_data( 'responsive', '1' ) ) ) {
 		wp_enqueue_style( 'responsive', WPEX_CSS_DIR . '/responsive.css', array( 'wpex-style' ) );
 	}
 	
@@ -30,11 +32,8 @@ function wpex_load_scripts() {
 	wp_enqueue_script( 'superfish', WPEX_JS_DIR. '/superfish.js', array( 'jquery', 'hoverIntent' ), '1.7.9', true );
 	wp_enqueue_script( 'fitvids', WPEX_JS_DIR. '/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 	wp_enqueue_script( 'prettyPhoto', WPEX_JS_DIR. '/jquery.prettyPhoto.js', array( 'jquery' ), '3.1.6', true );
-
-	wp_enqueue_script( 'html5shiv', WPEX_JS_DIR .'/html5.js', array(), false, false );
-	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 	
-	wp_enqueue_script( 'wpex-global', WPEX_JS_DIR . '/global.js', array( 'jquery', 'slicknav', 'hoverIntent', 'superfish', 'fitvids', 'prettyPhoto' ), '3.0.0', true );
+	wp_enqueue_script( 'wpex-global', WPEX_JS_DIR . '/global.js', array( 'jquery', 'slicknav', 'hoverIntent', 'superfish', 'fitvids', 'prettyPhoto' ), $theme_version, true );
 
 	wp_localize_script( 'wpex-global', 'wpexLocalize', array(
 		'mobileMenuText' => wpex_get_data( 'responsive_menu_text', __( 'Menu', 'wpex-adapt' )
